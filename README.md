@@ -1,2 +1,2 @@
 # agendaEventosJava
-Agenda de Eventos em Android
+Agenda de eventos desenvolvida em Java.
