@@ -96,7 +96,8 @@ public class TelaEvento {
                     excluirContato();
                     break;
                 case 4:
-                    listaConta();
+                    buscaConta();
+                    //listaConta();
                     break;
             }
         }
@@ -177,6 +178,21 @@ public class TelaEvento {
     private void excluirContato() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         gestorContatos.excluiContato(--indice);
+    }
+
+    private void buscaConta() {
+        JOptionPane.showMessageDialog(null, buscarContato());
+    }
+
+    public String buscarContato() {
+        String nome;
+        StringBuilder contato = new StringBuilder();
+        Contatos conta;
+        nome = (JOptionPane.showInputDialog("Nome"));
+        conta = gestorContatos.buscar(nome);
+        contato.append(conta.getNome()).append(" ").append(conta.getCelular()).append("\n");
+
+        return contato.toString();
     }
 
     private void listaConta() {
