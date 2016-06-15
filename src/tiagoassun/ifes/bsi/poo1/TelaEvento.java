@@ -39,6 +39,7 @@ public class TelaEvento {
         menu_gerenciar_contatos.append("2 - Editar Contatos").append("\n");
         menu_gerenciar_contatos.append("3 - Excluir Contatos").append("\n");
         menu_gerenciar_contatos.append("4 - Pesquisar Contatos").append("\n");
+        menu_gerenciar_contatos.append("5 - Listar Contatos").append("\n");
         menu_gerenciar_contatos.append("0 - Voltar").append("\n");
     }
 
@@ -48,6 +49,7 @@ public class TelaEvento {
         menu_criar_eventos.append("2 - Editar Evento").append("\n");
         menu_criar_eventos.append("3 - Excluir Evento").append("\n");
         menu_criar_eventos.append("4 - Pesquisar Evento").append("\n");
+        menu_criar_eventos.append("5 - Listar Evento").append("\n");
         menu_criar_eventos.append("0 - Voltar").append("\n");
     }
 
@@ -90,14 +92,16 @@ public class TelaEvento {
                     criarContato();
                     break;
                 case 2:
-                    ;
+                    //;
                     break;
                 case 3:
                     excluirContato();
                     break;
                 case 4:
                     buscaConta();
-                    //listaConta();
+                    break;
+                case 5:
+                    listaConta();
                     break;
             }
         }
@@ -113,12 +117,15 @@ public class TelaEvento {
                     criarEvento();
                     break;
                 case 2:
-                    ;
+                    //;
                     break;
                 case 3:
                     excluirEvento();
                     break;
                 case 4:
+                    buscaEvent();
+                    break;
+                case 5:
                     listaEvent();
                     break;
             }
@@ -212,6 +219,7 @@ public class TelaEvento {
 
 
 
+
     // FUNÇÕES DE “CRIAR EVENTOS”
     private void criarEvento() {
         Eventos evento = new Eventos();
@@ -224,6 +232,21 @@ public class TelaEvento {
     private void excluirEvento() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarEvento()));
         gestorEventos.excluiEvento(--indice);
+    }
+
+    private void buscaEvent() {
+        JOptionPane.showMessageDialog(null, buscarEvento());
+    }
+
+    public String buscarEvento() {
+        String nome;
+        StringBuilder evento = new StringBuilder();
+        Eventos even;
+        nome = (JOptionPane.showInputDialog("Nome"));
+        even = gestorEventos.buscar(nome);
+        evento.append(even.getTitulo()).append(" ").append(even.getData()).append("\n");
+
+        return evento.toString();
     }
 
     private void listaEvent() {
