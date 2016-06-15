@@ -5,7 +5,10 @@ import java.util.List;
 
 
 public class GestorEventos {
-    private List<Eventos> eventos;
+    private ArrayList<Eventos> eventos;
+
+
+
 
     public GestorEventos() {
         eventos = new ArrayList<>();
@@ -19,7 +22,7 @@ public class GestorEventos {
         eventos.add(evento);
     }
 
-    public void removeEvento(int pos) {
+    public void excluiEvento(int pos) {
         eventos.remove(pos);
     }
 }

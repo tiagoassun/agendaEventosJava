@@ -8,7 +8,9 @@ public class TelaEvento {
     private StringBuilder menu_gerenciar_contatos;
     private StringBuilder menu_criar_eventos;
     private StringBuilder menu_gerenciar_convidados_evento;
+
     private GestorEventos gestorEventos;
+    private GestorContatos gestorContatos;
 
 
 
@@ -16,6 +18,7 @@ public class TelaEvento {
     // FUNÇÕES DA “PROJEÇÃO DA TELA”
     public TelaEvento() {
         gestorEventos = new GestorEventos();
+        gestorContatos = new GestorContatos();
         iniciarMenuAgenda();
         iniciarMenuGerenciarContatos();
         iniciarMenuCriarEventos();
@@ -32,10 +35,10 @@ public class TelaEvento {
 
     private void iniciarMenuGerenciarContatos() {
         menu_gerenciar_contatos = new StringBuilder();
-        menu_gerenciar_contatos.append("1 - Criar Contato").append("\n");
-        menu_gerenciar_contatos.append("2 - Editar Contato").append("\n");
-        menu_gerenciar_contatos.append("3 - Excluir Contato").append("\n");
-        menu_gerenciar_contatos.append("4 - Pesquisar Contato").append("\n");
+        menu_gerenciar_contatos.append("1 - Criar Contatos").append("\n");
+        menu_gerenciar_contatos.append("2 - Editar Contatos").append("\n");
+        menu_gerenciar_contatos.append("3 - Excluir Contatos").append("\n");
+        menu_gerenciar_contatos.append("4 - Pesquisar Contatos").append("\n");
         menu_gerenciar_contatos.append("0 - Voltar").append("\n");
     }
 
@@ -53,7 +56,7 @@ public class TelaEvento {
         menu_gerenciar_convidados_evento.append("1 - Adicionar Convidado Individualmente").append("\n");
         menu_gerenciar_convidados_evento.append("2 - Remover Convidado").append("\n");
         menu_gerenciar_convidados_evento.append("3 - Mostrar lista de Convidados de um evento").append("\n");
-        menu_gerenciar_convidados_evento.append("4 - Verificar se um Contato está em uma lista de um evento").append("\n");
+        menu_gerenciar_convidados_evento.append("4 - Verificar se um Contatos está em uma lista de um evento").append("\n");
         menu_gerenciar_convidados_evento.append("5 - Mostrar os eventos para os quais um contato está convidado").append("\n");
         menu_gerenciar_convidados_evento.append("6 - Criar lista automática de Convidados").append("\n");
         menu_gerenciar_convidados_evento.append("0 - Voltar").append("\n");
@@ -84,13 +87,16 @@ public class TelaEvento {
                     executar();
                     break;
                 case 1:
-                    ;
+                    criarContato();
                     break;
                 case 2:
                     ;
                     break;
                 case 3:
-                    ;
+                    excluirContato();
+                    break;
+                case 4:
+                    listaConta();
                     break;
             }
         }
@@ -112,7 +118,7 @@ public class TelaEvento {
                     excluirEvento();
                     break;
                 case 4:
-                    lista();
+                    listaEvent();
                     break;
             }
         }
@@ -161,12 +167,31 @@ public class TelaEvento {
 
 
     // FUNÇÕES DE “GERENCIAR CONTATOS”
-    private void incluirParticipante() {
-        Contato part = new Contato();
-        part.setNome(JOptionPane.showInputDialog("Nome"));
-        //gestorEventos.adicionaParticipante(part);
+    private void criarContato() {
+        Contatos contato = new Contatos();
+        contato.setNome(JOptionPane.showInputDialog("Nome"));
+        contato.setCelular(JOptionPane.showInputDialog("Celular"));
+        gestorContatos.adicionaContato(contato);
     }
 
+    private void excluirContato() {
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        gestorContatos.excluiContato(--indice);
+    }
+
+    private void listaConta() {
+        JOptionPane.showMessageDialog(null, listarContato());
+    }
+
+    private String listarContato() {
+        int cont = 0;
+        StringBuilder contato = new StringBuilder();
+        for (Contatos conta : gestorContatos.getContatos()) {
+            contato.append(++cont).append(" - ").append(conta.getNome()).append(" ").append(conta.getCelular()).append("\n");
+
+        }
+        return contato.toString();
+    }
 
 
 
@@ -182,10 +207,10 @@ public class TelaEvento {
 
     private void excluirEvento() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarEvento()));
-        gestorEventos.removeEvento(--indice);
+        gestorEventos.excluiEvento(--indice);
     }
 
-    private void lista() {
+    private void listaEvent() {
         JOptionPane.showMessageDialog(null, listarEvento());
     }
 
@@ -193,8 +218,7 @@ public class TelaEvento {
         int cont = 0;
         StringBuilder listaE = new StringBuilder();
         for (Eventos evento : gestorEventos.getEventos()) {
-            listaE.append(++cont).append(" - ").append(evento.getData())
-                    .append(" ").append(evento.getTitulo()).append("\n");
+            listaE.append(++cont).append(" - ").append(evento.getTitulo()).append(" ").append(evento.getData()).append("\n");
 
         }
         return listaE.toString();
