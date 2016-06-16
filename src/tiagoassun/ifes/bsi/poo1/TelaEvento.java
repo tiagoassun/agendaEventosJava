@@ -139,16 +139,22 @@ public class TelaEvento {
                 case 0:
                     executar();
                     break;
-                case 1:
+                case 1: // 1 - Adicionar Convidado Individualmente
                     ;
                     break;
-                case 2:
+                case 2: // 2 - Remover Convidado
                     ;
                     break;
-                case 3:
+                case 3: // 3 - Mostrar lista de Convidados de um evento
                     ;
                     break;
-                case 4:
+                case 4: // 4 - Verificar se um Contatos está em uma lista de um evento
+                    ;
+                    break;
+                case 5: // 5 - Mostrar os eventos para os quais um contato está convidado
+                    ;
+                    break;
+                case 6: // 6 - Criar lista automática de Convidados
                     ;
                     break;
             }
@@ -192,7 +198,7 @@ public class TelaEvento {
         JOptionPane.showMessageDialog(null, buscarContato());
     }
 
-    public String buscarContato() {
+    private String buscarContato() {
         String nome;
         StringBuilder contato = new StringBuilder();
         Contatos conta;
@@ -239,7 +245,7 @@ public class TelaEvento {
         JOptionPane.showMessageDialog(null, buscarEvento());
     }
 
-    public String buscarEvento() {
+    private String buscarEvento() {
         String nome;
         StringBuilder evento = new StringBuilder();
         Eventos even;
@@ -263,4 +269,14 @@ public class TelaEvento {
         }
         return listaE.toString();
     }
+
+
+
+
+
+    // FUNÇÕES DE “GERENCIAR CONVIDADOS EVENTO”
+    public void addConvidadoIndividualmente (String nome) {
+        //gestorEventos.buscar(nome).getTitulo();
+    }
+
 }

@@ -93,11 +93,11 @@ public class Eventos {
         return contatos;
     }
 
-    public void adicionaParticipante(Contatos p) {
-        contatos.add(p);
+    public void adicionaParticipante(Contatos c) {
+        contatos.add(c);
     }
 
-    public void excluiParticipante(Contatos p) {
-        contatos.remove(p);
+    public void excluiParticipante(Contatos c) {
+        contatos.remove(c);
     }
 }
