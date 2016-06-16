@@ -4,6 +4,7 @@ import javax.swing.*;
 
 
 public class TelaEvento {
+
     private StringBuilder menu_agenda;
     private StringBuilder menu_gerenciar_contatos;
     private StringBuilder menu_criar_eventos;

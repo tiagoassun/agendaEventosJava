@@ -1,7 +1,12 @@
 package tiagoassun.ifes.bsi.poo1;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 
 public class Contatos {
+
     private String nome;
     private String celular;
     private String email;
