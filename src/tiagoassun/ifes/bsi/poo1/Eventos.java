@@ -1,5 +1,6 @@
 package tiagoassun.ifes.bsi.poo1;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -99,5 +100,14 @@ public class Eventos {
 
     public void excluiParticipante(Contatos c) {
         contatos.remove(c);
+    }
+
+    public Contatos buscarNome(String nome){
+        for(int i=0; i<contatos.size(); i++) {
+            Contatos c = contatos.get(i);
+            if(c.getNome().equalsIgnoreCase(nome))
+                return c;
+        }
+        return null;
     }
 }

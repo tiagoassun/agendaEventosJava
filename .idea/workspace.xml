@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0724e5f5-db39-4321-9f69-142dda77fc94" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/agendaEventosJava/tiagoassun/ifes/bsi/poo1/Eventos.class" afterPath="$PROJECT_DIR$/out/production/agendaEventosJava/tiagoassun/ifes/bsi/poo1/Eventos.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/agendaEventosJava/tiagoassun/ifes/bsi/poo1/TelaEvento.class" afterPath="$PROJECT_DIR$/out/production/agendaEventosJava/tiagoassun/ifes/bsi/poo1/TelaEvento.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Eventos.java" afterPath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Eventos.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java" afterPath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java" afterPath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java" afterPath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java" />
     </list>
     <ignored path="agendaEventosJava.iws" />
@@ -30,27 +34,36 @@
       <file leaf-file-name="TelaEvento.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="277" column="56" selection-start-line="277" selection-start-column="52" selection-end-line="277" selection-end-column="56" />
+            <state relative-caret-position="2346">
+              <caret line="254" column="39" selection-start-line="254" selection-start-column="39" selection-end-line="254" selection-end-column="39" />
               <folding>
-                <element signature="e#5977#5978#0" expanded="true" />
-                <element signature="e#6058#6059#0" expanded="true" />
-                <element signature="e#6847#6848#0" expanded="true" />
-                <element signature="e#6915#6916#0" expanded="true" />
-                <element signature="e#7318#7319#0" expanded="true" />
-                <element signature="e#7386#7387#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
+                <element signature="e#7444#7445#0" expanded="true" />
+                <element signature="e#7512#7513#0" expanded="true" />
+                <element signature="e#7925#7926#0" expanded="true" />
+                <element signature="e#7993#7994#0" expanded="true" />
+                <element signature="e#9382#9383#0" expanded="true" />
+                <element signature="e#9449#9450#0" expanded="true" />
+                <element signature="e#9852#9853#0" expanded="true" />
+                <element signature="e#9919#9920#0" expanded="true" />
+                <element signature="e#12337#12346#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GestorEventos.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
+      <file leaf-file-name="GestorContatos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#excluiContatoNome#0;class#GestorContatos#0" expanded="false" />
+                <element signature="method#buscarNome#0;class#GestorContatos#0" expanded="false" />
+                <element signature="e#1042#1043#0" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,26 +72,27 @@
       <file leaf-file-name="Eventos.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Eventos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="99" column="46" selection-start-line="99" selection-start-column="46" selection-end-line="99" selection-end-column="46" />
+            <state relative-caret-position="102">
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1851#1852#0" expanded="true" />
-                <element signature="e#1882#1883#0" expanded="true" />
-                <element signature="e#1932#1933#0" expanded="true" />
-                <element signature="e#1966#1967#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Contatos.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contatos.java">
+      <file leaf-file-name="GestorEventos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#211#212#0" expanded="true" />
+                <element signature="e#254#255#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
+                <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -105,14 +119,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contato.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java" />
         <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Main.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java" />
         <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contatos.java" />
         <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Relacao.java" />
         <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GrupoEvento.java" />
         <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Gostos.java" />
         <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Eventos.java" />
+        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java" />
+        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java" />
         <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java" />
       </list>
     </option>
@@ -122,6 +136,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -170,7 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -209,8 +229,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,7 +239,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="E:/Test" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -666,7 +687,8 @@
       <workItem from="1465933077007" duration="5412000" />
       <workItem from="1465940414683" duration="10244000" />
       <workItem from="1466016537877" duration="4718000" />
-      <workItem from="1466081156177" duration="11533000" />
+      <workItem from="1466081156177" duration="11589000" />
+      <workItem from="1466103779100" duration="12186000" />
     </task>
     <task id="LOCAL-00001" summary="CRUD de Contatos e Eventos quase pronto, faltando o 'alterar' em ambos.">
       <created>1466017645583</created>
@@ -696,11 +718,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466094076825</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Alterações esteticas no codigo, nada relacionado a funcionalidades do progrema.">
+      <created>1466095547704</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1466095547704</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32307000" />
+    <option name="totallyTimeSpent" value="44549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -724,7 +753,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -747,11 +776,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CRUD de Contatos e Eventos quase pronto, faltando o 'alterar' em ambos." />
     <MESSAGE value="Classes Gostos, GruposEvento e Relacao estão prontas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Classes Gostos, GruposEvento e Relacao estão prontas." />
+    <MESSAGE value="Alterações esteticas no codigo, nada relacionado a funcionalidades do progrema." />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterações esteticas no codigo, nada relacionado a funcionalidades do progrema." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -760,6 +790,63 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="e#7444#7445#0" expanded="true" />
+            <element signature="e#7512#7513#0" expanded="true" />
+            <element signature="e#7925#7926#0" expanded="true" />
+            <element signature="e#7993#7994#0" expanded="true" />
+            <element signature="e#9382#9383#0" expanded="true" />
+            <element signature="e#9449#9450#0" expanded="true" />
+            <element signature="e#9852#9853#0" expanded="true" />
+            <element signature="e#9919#9920#0" expanded="true" />
+            <element signature="e#12337#12346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Eventos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="99" column="46" selection-start-line="99" selection-start-column="46" selection-end-line="99" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contatos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -774,7 +861,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="e#7444#7445#0" expanded="true" />
+            <element signature="e#7512#7513#0" expanded="true" />
+            <element signature="e#7925#7926#0" expanded="true" />
+            <element signature="e#7993#7994#0" expanded="true" />
+            <element signature="e#9382#9383#0" expanded="true" />
+            <element signature="e#9449#9450#0" expanded="true" />
+            <element signature="e#9852#9853#0" expanded="true" />
+            <element signature="e#9919#9920#0" expanded="true" />
+            <element signature="e#12337#12346#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -794,6 +893,8 @@
           <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -812,7 +913,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="e#7444#7445#0" expanded="true" />
+            <element signature="e#7512#7513#0" expanded="true" />
+            <element signature="e#7925#7926#0" expanded="true" />
+            <element signature="e#7993#7994#0" expanded="true" />
+            <element signature="e#9382#9383#0" expanded="true" />
+            <element signature="e#9449#9450#0" expanded="true" />
+            <element signature="e#9852#9853#0" expanded="true" />
+            <element signature="e#9919#9920#0" expanded="true" />
+            <element signature="e#12337#12346#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -822,7 +935,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#buscar#0;class#GestorEventos#0" expanded="false" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -833,6 +950,8 @@
           <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -843,7 +962,10 @@
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#buscar#0;class#GestorContatos#0" expanded="false" />
+            <element signature="method#excluiContatoNome#0;class#GestorContatos#0" expanded="false" />
+            <element signature="method#buscarNome#0;class#GestorContatos#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -862,7 +984,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3077">
           <caret line="189" column="5" selection-start-line="189" selection-start-column="5" selection-end-line="189" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="e#7444#7445#0" expanded="true" />
+            <element signature="e#7512#7513#0" expanded="true" />
+            <element signature="e#7925#7926#0" expanded="true" />
+            <element signature="e#7993#7994#0" expanded="true" />
+            <element signature="e#9382#9383#0" expanded="true" />
+            <element signature="e#9449#9450#0" expanded="true" />
+            <element signature="e#9852#9853#0" expanded="true" />
+            <element signature="e#9919#9920#0" expanded="true" />
+            <element signature="e#12337#12346#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -872,7 +1006,11 @@
           <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#buscar#0;class#GestorEventos#0" expanded="false" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -883,6 +1021,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -911,7 +1051,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="e#7444#7445#0" expanded="true" />
+            <element signature="e#7512#7513#0" expanded="true" />
+            <element signature="e#7925#7926#0" expanded="true" />
+            <element signature="e#7993#7994#0" expanded="true" />
+            <element signature="e#9382#9383#0" expanded="true" />
+            <element signature="e#9449#9450#0" expanded="true" />
+            <element signature="e#9852#9853#0" expanded="true" />
+            <element signature="e#9919#9920#0" expanded="true" />
+            <element signature="e#12337#12346#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -921,7 +1073,11 @@
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#buscar#0;class#GestorEventos#0" expanded="false" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -932,6 +1088,8 @@
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -960,7 +1118,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="e#7444#7445#0" expanded="true" />
+            <element signature="e#7512#7513#0" expanded="true" />
+            <element signature="e#7925#7926#0" expanded="true" />
+            <element signature="e#7993#7994#0" expanded="true" />
+            <element signature="e#9382#9383#0" expanded="true" />
+            <element signature="e#9449#9450#0" expanded="true" />
+            <element signature="e#9852#9853#0" expanded="true" />
+            <element signature="e#9919#9920#0" expanded="true" />
+            <element signature="e#12337#12346#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -970,7 +1140,11 @@
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#buscar#0;class#GestorEventos#0" expanded="false" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -981,6 +1155,8 @@
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1001,17 +1177,6 @@
           <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
           <folding>
             <element signature="e#142#143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#buscar#0;class#GestorContatos#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1039,10 +1204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#195#222#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,26 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#207#234#0" expanded="true" />
-            <element signature="e#340#367#0" expanded="true" />
-            <element signature="e#469#496#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Eventos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="99" column="46" selection-start-line="99" selection-start-column="46" selection-end-line="99" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1851#1852#0" expanded="true" />
-            <element signature="e#1882#1883#0" expanded="true" />
-            <element signature="e#1932#1933#0" expanded="true" />
-            <element signature="e#1966#1967#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1083,10 +1224,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="652" column="0" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#excluiContatoNome#0;class#GestorContatos#0" expanded="false" />
+            <element signature="method#buscarNome#0;class#GestorContatos#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="510">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Eventos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1095,15 +1273,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="277" column="56" selection-start-line="277" selection-start-column="52" selection-end-line="277" selection-end-column="56" />
+        <state relative-caret-position="2346">
+          <caret line="254" column="39" selection-start-line="254" selection-start-column="39" selection-end-line="254" selection-end-column="39" />
           <folding>
-            <element signature="e#5977#5978#0" expanded="true" />
-            <element signature="e#6058#6059#0" expanded="true" />
-            <element signature="e#6847#6848#0" expanded="true" />
-            <element signature="e#6915#6916#0" expanded="true" />
-            <element signature="e#7318#7319#0" expanded="true" />
-            <element signature="e#7386#7387#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="e#7444#7445#0" expanded="true" />
+            <element signature="e#7512#7513#0" expanded="true" />
+            <element signature="e#7925#7926#0" expanded="true" />
+            <element signature="e#7993#7994#0" expanded="true" />
+            <element signature="e#9382#9383#0" expanded="true" />
+            <element signature="e#9449#9450#0" expanded="true" />
+            <element signature="e#9852#9853#0" expanded="true" />
+            <element signature="e#9919#9920#0" expanded="true" />
+            <element signature="e#12337#12346#0" expanded="true" />
           </folding>
         </state>
       </provider>

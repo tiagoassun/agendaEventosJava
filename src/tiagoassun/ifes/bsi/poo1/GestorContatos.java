@@ -28,13 +28,25 @@ public class GestorContatos {
         contatos.remove(pos);
     }
 
-    public Contatos buscar(String nome){
+    public void excluiContatoNome(String nome) {
+        int i;
+        for(i=0; i<contatos.size(); i++) {
+            Contatos c = contatos.get(i);
+            if(c.getNome().equalsIgnoreCase(nome))
+                contatos.remove(i);
+        }
+    }
+
+    public Contatos buscarNome(String nome){
         for(int i=0; i<contatos.size(); i++) {
             Contatos c = contatos.get(i);
             if(c.getNome().equalsIgnoreCase(nome))
                 return c;
         }
-        JOptionPane.showInputDialog("Contato não encontrado!");
         return null;
+    }
+
+    public Contatos buscarIndice(int pos){
+        return contatos.get(pos);
     }
 }

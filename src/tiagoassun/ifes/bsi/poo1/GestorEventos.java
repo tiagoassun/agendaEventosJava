@@ -28,7 +28,16 @@ public class GestorEventos {
         eventos.remove(pos);
     }
 
-    public Eventos buscar(String nome){
+    public void excluiEventoNome(String nome) {
+        int i;
+        for(i=0; i<eventos.size(); i++) {
+            Eventos e = eventos.get(i);
+            if(e.getTitulo().equalsIgnoreCase(nome))
+                eventos.remove(i);
+        }
+    }
+
+    public Eventos buscarNome(String nome){
         for(int i=0; i<eventos.size(); i++) {
             Eventos e = eventos.get(i);
             if(e.getTitulo().equalsIgnoreCase(nome))
@@ -36,5 +45,9 @@ public class GestorEventos {
         }
         JOptionPane.showInputDialog("Evento não encontrado!");
         return null;
+    }
+
+    public Eventos buscarIndice(int pos){
+        return eventos.get(pos);
     }
 }
