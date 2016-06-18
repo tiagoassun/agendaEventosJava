@@ -7,7 +7,7 @@ import java.util.List;
 
 public class GestorEventos {
 
-    private ArrayList<Eventos> eventos;
+    private ArrayList<Evento> eventos;
 
 
 
@@ -16,11 +16,11 @@ public class GestorEventos {
         eventos = new ArrayList<>();
     }
 
-    public List<Eventos> getEventos() {
+    public List<Evento> getEventos() {
         return eventos;
     }
 
-    public void adicionaEvento(Eventos evento) {
+    public void adicionaEvento(Evento evento) {
         eventos.add(evento);
     }
 
@@ -31,15 +31,15 @@ public class GestorEventos {
     public void excluiEventoNome(String nome) {
         int i;
         for(i=0; i<eventos.size(); i++) {
-            Eventos e = eventos.get(i);
+            Evento e = eventos.get(i);
             if(e.getTitulo().equalsIgnoreCase(nome))
                 eventos.remove(i);
         }
     }
 
-    public Eventos buscarNome(String nome){
+    public Evento buscarNome(String nome){
         for(int i=0; i<eventos.size(); i++) {
-            Eventos e = eventos.get(i);
+            Evento e = eventos.get(i);
             if(e.getTitulo().equalsIgnoreCase(nome))
                 return e;
         }
@@ -47,7 +47,13 @@ public class GestorEventos {
         return null;
     }
 
-    public Eventos buscarIndice(int pos){
+    public Evento buscarIndice(int pos){
         return eventos.get(pos);
+    }
+
+    public boolean validarRegras(Autenticar conta, Evento event) {
+        boolean result = false;
+        result =  conta.autentica(event);
+        return result;
     }
 }

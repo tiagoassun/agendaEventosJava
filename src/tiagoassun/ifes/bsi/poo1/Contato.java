@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class Contatos {
+public class Contato implements Autenticar{
 
     private String nome;
     private String celular;
@@ -18,7 +18,10 @@ public class Contatos {
     private String estado;
     private String pais;
     private String genero;
-    private String procimidade;
+    private String proximidade;
+
+    public Relacao relacoes = new Relacao();
+    public Gostos gotos = new Gostos();
 
 
 
@@ -111,11 +114,16 @@ public class Contatos {
         this.genero = genero;
     }
 
-    public String getProcimidade() {
-        return procimidade;
+    public String getProximidade() {
+        return proximidade;
     }
 
-    public void setProcimidade(String procimidade) {
-        this.procimidade = procimidade;
+    public void setProximidade(String proximidade) {
+        this.proximidade = proximidade;
+    }
+
+    @Override
+    public boolean autentica(Evento event) {
+        return false;
     }
 }

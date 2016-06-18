@@ -8,7 +8,11 @@ import java.util.List;
 public class TelaEvento {
 
     private StringBuilder menu_agenda;
+
     private StringBuilder menu_gerenciar_contatos;
+    private StringBuilder subMenu_criar_contatos;
+    private StringBuilder subMenu_criar_relacao;
+
     private StringBuilder menu_criar_eventos;
     private StringBuilder menu_gerenciar_convidados_evento;
 
@@ -24,27 +28,48 @@ public class TelaEvento {
         gestorEventos = new GestorEventos();
         gestorContatos = new GestorContatos();
         iniciarMenuAgenda();
+
         iniciarMenuGerenciarContatos();
+        iniciarSubMenuCriarContato();
+        iniciarSubMenuCriarRelacao();
+
         iniciarMenuCriarEventos();
         iniciarMenuGerenciarConvidadosEvento();
     }
 
     private void iniciarMenuAgenda() {
         menu_agenda = new StringBuilder();
-        menu_agenda.append("1 - Gerenciar Contatos").append("\n");
-        menu_agenda.append("2 - Criar Eventos").append("\n");
+        menu_agenda.append("1 - Gerenciar Contato").append("\n");
+        menu_agenda.append("2 - Criar Evento").append("\n");
         menu_agenda.append("3 - Gerenciar Convidados de evento").append("\n");
         menu_agenda.append("0 - Sair").append("\n");
     }
 
     private void iniciarMenuGerenciarContatos() {
         menu_gerenciar_contatos = new StringBuilder();
-        menu_gerenciar_contatos.append("1 - Criar Contatos").append("\n");
-        menu_gerenciar_contatos.append("2 - Editar Contatos").append("\n");
-        menu_gerenciar_contatos.append("3 - Excluir Contatos").append("\n");
-        menu_gerenciar_contatos.append("4 - Pesquisar Contatos").append("\n");
-        menu_gerenciar_contatos.append("5 - Listar Contatos").append("\n");
+        menu_gerenciar_contatos.append("1 - Criar Contato").append("\n");
+        menu_gerenciar_contatos.append("2 - Editar Contato").append("\n");
+        menu_gerenciar_contatos.append("3 - Excluir Contato").append("\n");
+        menu_gerenciar_contatos.append("4 - Pesquisar Contato").append("\n");
+        menu_gerenciar_contatos.append("5 - Listar Contato").append("\n");
+        menu_gerenciar_contatos.append("6 - Criar Relação").append("\n");
         menu_gerenciar_contatos.append("0 - Voltar").append("\n");
+    }
+
+    private void iniciarSubMenuCriarContato() {
+        subMenu_criar_contatos = new StringBuilder();
+        subMenu_criar_contatos.append("1 - Amigo").append("\n");
+        subMenu_criar_contatos.append("2 - Colega").append("\n");
+        subMenu_criar_contatos.append("3 - Familiar").append("\n");
+        subMenu_criar_contatos.append("0 - Voltar").append("\n");
+    }
+
+    private void iniciarSubMenuCriarRelacao() {
+        subMenu_criar_relacao = new StringBuilder();
+        subMenu_criar_relacao.append("1 - Relação Amigo").append("\n");
+        subMenu_criar_relacao.append("2 - Relação Colega").append("\n");
+        subMenu_criar_relacao.append("3 - Relação Familiar").append("\n");
+        subMenu_criar_relacao.append("0 - Voltar").append("\n");
     }
 
     private void iniciarMenuCriarEventos() {
@@ -62,7 +87,7 @@ public class TelaEvento {
         menu_gerenciar_convidados_evento.append("1 - Adicionar Convidado Individualmente").append("\n");
         menu_gerenciar_convidados_evento.append("2 - Remover Convidado").append("\n");
         menu_gerenciar_convidados_evento.append("3 - Mostrar lista de Convidados de um evento").append("\n");
-        menu_gerenciar_convidados_evento.append("4 - Verificar se um Contatos está em uma lista de um evento").append("\n");
+        menu_gerenciar_convidados_evento.append("4 - Verificar se um Contato está em uma lista de um evento").append("\n");
         menu_gerenciar_convidados_evento.append("5 - Mostrar os eventos para os quais um contato está convidado").append("\n");
         menu_gerenciar_convidados_evento.append("6 - Criar lista automática de Convidados").append("\n");
         menu_gerenciar_convidados_evento.append("0 - Voltar").append("\n");
@@ -93,7 +118,7 @@ public class TelaEvento {
                     executar();
                     break;
                 case 1:
-                    criarContato();
+                    executarSubMenuCriarContato();
                     break;
                 case 2:
                     editarContato();
@@ -106,6 +131,47 @@ public class TelaEvento {
                     break;
                 case 5:
                     listaConta();
+                    break;
+                case 6:
+                    executarSubMenuCriarRelacao();
+                    break;
+            }
+        }
+    }
+
+    void executarSubMenuCriarContato() {
+        while (true){
+            switch (Integer.parseInt(mostrarSubMenuCriarContato())) {
+                case 0:
+                    executarMenuGerenciarContatos();
+                    break;
+                case 1:
+                    criarAmigo();
+                    break;
+                case 2:
+                    criarColega();
+                    break;
+                case 3:
+                    criarFamiliar();
+                    break;
+            }
+        }
+    }
+
+    void executarSubMenuCriarRelacao() {
+        while (true){
+            switch (Integer.parseInt(mostrarSubMenuCriarRelacao())) {
+                case 0:
+                    executarMenuGerenciarContatos();
+                    break;
+                case 1:
+                    criarRelacaoAmigo();
+                    break;
+                case 2:
+                    criarRelacaoColega();
+                    break;
+                case 3:
+                    criarRelacaoFamiliar();
                     break;
             }
         }
@@ -139,7 +205,7 @@ public class TelaEvento {
     void executarMenuGerenciarConvidadosEvento() {
         while (true) {
             switch (Integer.parseInt(mostrarMenuGerenciarConvidadosEvento())) {
-                case 0:
+                case 0: // 0 - Voltar
                     executar();
                     break;
                 case 1: // 1 - Adicionar Convidado Individualmente
@@ -168,9 +234,19 @@ public class TelaEvento {
         return JOptionPane.showInputDialog(null, menu_agenda);
     }
 
+
     private String mostrarMenuGerenciarContatos() {
         return JOptionPane.showInputDialog(null, menu_gerenciar_contatos);
     }
+
+    private String mostrarSubMenuCriarContato() {
+        return JOptionPane.showInputDialog(null, subMenu_criar_contatos);
+    }
+
+    private String mostrarSubMenuCriarRelacao() {
+        return JOptionPane.showInputDialog(null, subMenu_criar_contatos);
+    }
+
 
     private String mostrarMenuCriarEventos() {
         return JOptionPane.showInputDialog(null, menu_criar_eventos);
@@ -185,21 +261,76 @@ public class TelaEvento {
 
 
     // FUNÇÕES DE “GERENCIAR CONTATOS”
-    private void criarContato() {
-        Contatos contato = new Contatos();
-        contato.setNome(JOptionPane.showInputDialog("Nome"));
-        contato.setCelular(JOptionPane.showInputDialog("Celular"));
-        gestorContatos.adicionaContato(contato);
+    private void criarAmigo() {
+        Amigo amigo = new Amigo();
+        amigo.setNome(JOptionPane.showInputDialog("Nome"));
+        amigo.setCelular(JOptionPane.showInputDialog("Celular"));
+        //amigo.setEmail(JOptionPane.showInputDialog("E-mail"));
+        //amigo.setNascimento(JOptionPane.showInputDialog("Nascimento"));
+        //amigo.setRua(JOptionPane.showInputDialog("Rua"));
+        //amigo.setNumero(JOptionPane.showInputDialog("Numero da casa"));
+        //amigo.setBairro(JOptionPane.showInputDialog("Bairro"));
+        //amigo.setCidade(JOptionPane.showInputDialog("Cidade"));
+        //amigo.setEstado(JOptionPane.showInputDialog("Estado"));
+        //amigo.setPais(JOptionPane.showInputDialog("País"));
+        //amigo.setGenero(JOptionPane.showInputDialog("Genero"));
+        //amigo.setProximidade(JOptionPane.showInputDialog("Proximidade"));
+        //amigo.setReferencia(JOptionPane.showInputDialog("Referencia"));
+        gestorContatos.adicionaContato(amigo);
+    }
+
+    private void criarColega() {
+        Colega colega = new Colega();
+        colega.setNome(JOptionPane.showInputDialog("Nome"));
+        colega.setCelular(JOptionPane.showInputDialog("Celular"));
+        //colega.setEmail(JOptionPane.showInputDialog("E-mail"));
+        //colega.setNascimento(JOptionPane.showInputDialog("Nascimento"));
+        //colega.setRua(JOptionPane.showInputDialog("Rua"));
+        //colega.setNumero(JOptionPane.showInputDialog("Numero da casa"));
+        //colega.setBairro(JOptionPane.showInputDialog("Bairro"));
+        //colega.setCidade(JOptionPane.showInputDialog("Cidade"));
+        //colega.setEstado(JOptionPane.showInputDialog("Estado"));
+        //colega.setPais(JOptionPane.showInputDialog("País"));
+        //colega.setGenero(JOptionPane.showInputDialog("Genero"));
+        //colega.setProximidade(JOptionPane.showInputDialog("Proximidade"));
+        //colega.setReferencia(JOptionPane.showInputDialog("Referencia"));
+        //colega.setLocal_trabalho(JOptionPane.showInputDialog("Local de trabalho"));
+        //colega.setProfissao(JOptionPane.showInputDialog("Profissão"));
+        gestorContatos.adicionaContato(colega);
+    }
+
+    private void criarFamiliar() {
+        Familiar familiar = new Familiar();
+        familiar.setNome(JOptionPane.showInputDialog("Nome"));
+        familiar.setCelular(JOptionPane.showInputDialog("Celular"));
+        //familiar.setEmail(JOptionPane.showInputDialog("E-mail"));
+        //familiar.setNascimento(JOptionPane.showInputDialog("Nascimento"));
+        //familiar.setRua(JOptionPane.showInputDialog("Rua"));
+        //familiar.setNumero(JOptionPane.showInputDialog("Numero da casa"));
+        //familiar.setBairro(JOptionPane.showInputDialog("Bairro"));
+        //familiar.setCidade(JOptionPane.showInputDialog("Cidade"));
+        //familiar.setEstado(JOptionPane.showInputDialog("Estado"));
+        //familiar.setPais(JOptionPane.showInputDialog("País"));
+        //familiar.setGenero(JOptionPane.showInputDialog("Genero"));
+        //familiar.setProximidade(JOptionPane.showInputDialog("Proximidade"));
+        //familiar.setParentesco(JOptionPane.showInputDialog("Parentesco"));
+        gestorContatos.adicionaContato(familiar);
     }
 
     public void editarContato() {
-        String nome;
-        nome = JOptionPane.showInputDialog("Nome contato");
-        Contatos conta = gestorContatos.buscarNome(nome);
-        gestorContatos.excluiContatoNome(nome);
-        conta.setNome(JOptionPane.showInputDialog("Nome"));
-        conta.setCelular(JOptionPane.showInputDialog("Celular"));
-        gestorContatos.adicionaContato(conta);
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta = gestorContatos.buscarIndice(--indice);
+        gestorContatos.excluiContato(indice); //Não precisa de "--indice" pois já foi feito na linha a cima
+
+        if (conta instanceof Amigo){
+            criarAmigo();
+        }
+        else if (conta instanceof Colega){
+            criarColega();
+        }
+        else{
+            criarFamiliar();
+        }
     }
 
     private void excluirContato() {
@@ -214,11 +345,10 @@ public class TelaEvento {
     private String buscarContato() {
         String nome;
         StringBuilder contato = new StringBuilder();
-        Contatos conta;
+        Contato conta;
         nome = JOptionPane.showInputDialog("Nome contato");
         conta = gestorContatos.buscarNome(nome);
         contato.append(conta.getNome()).append(" ").append(conta.getCelular()).append("\n");
-
         return contato.toString();
     }
 
@@ -229,10 +359,37 @@ public class TelaEvento {
     private String listarContato() {
         int cont = 0;
         StringBuilder contato = new StringBuilder();
-        for (Contatos conta : gestorContatos.getContatos()) {
+        for (Contato conta : gestorContatos.getContatos()) {
             contato.append(++cont).append(" - ").append(conta.getNome()).append(" ").append(conta.getCelular()).append("\n");
         }
         return contato.toString();
+    }
+
+    public void criarRelacaoAmigo() {
+        int indice1 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta1 = gestorContatos.buscarIndice(--indice1);
+        int indice2 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta2 = gestorContatos.buscarIndice(--indice2);
+        conta1.relacoes.adicionarAmigo(conta2);
+        conta2.relacoes.adicionarAmigo(conta1);
+    }
+
+    public void criarRelacaoColega() {
+        int indice1 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta1 = gestorContatos.buscarIndice(--indice1);
+        int indice2 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta2 = gestorContatos.buscarIndice(--indice2);
+        conta1.relacoes.adicionarColega(conta2);
+        conta2.relacoes.adicionarColega(conta1);
+    }
+
+    public void criarRelacaoFamiliar() {
+        int indice1 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta1 = gestorContatos.buscarIndice(--indice1);
+        int indice2 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta2 = gestorContatos.buscarIndice(--indice2);
+        conta1.relacoes.adicionarFamiliar(conta2);
+        conta2.relacoes.adicionarFamiliar(conta1);
     }
 
 
@@ -241,7 +398,7 @@ public class TelaEvento {
 
     // FUNÇÕES DE “CRIAR EVENTOS”
     private void criarEvento() {
-        Eventos evento = new Eventos();
+        Evento evento = new Evento();
         evento.setTitulo(JOptionPane.showInputDialog("Título do Evento"));
         evento.setData(JOptionPane.showInputDialog("Data"));
         evento.setLocal(JOptionPane.showInputDialog("Local"));
@@ -251,7 +408,7 @@ public class TelaEvento {
     public void editarEvento() {
         String nome;
         nome = (JOptionPane.showInputDialog("Nome evento"));
-        Eventos evento = gestorEventos.buscarNome(nome);
+        Evento evento = gestorEventos.buscarNome(nome);
         gestorEventos.excluiEventoNome(nome);
         evento.setTitulo(JOptionPane.showInputDialog("Título do Evento"));
         evento.setData(JOptionPane.showInputDialog("Data"));
@@ -271,7 +428,7 @@ public class TelaEvento {
     private String buscarEvento() {
         String nome;
         StringBuilder evento = new StringBuilder();
-        Eventos even;
+        Evento even;
         nome = (JOptionPane.showInputDialog("Nome evento"));
         even = gestorEventos.buscarNome(nome);
         evento.append(even.getTitulo()).append(" ").append(even.getData()).append("\n");
@@ -286,7 +443,7 @@ public class TelaEvento {
     private String listarEvento() {
         int cont = 0;
         StringBuilder listaE = new StringBuilder();
-        for (Eventos evento : gestorEventos.getEventos()) {
+        for (Evento evento : gestorEventos.getEventos()) {
             listaE.append(++cont).append(" - ").append(evento.getTitulo()).append(" ").append(evento.getData()).append("\n");
         }
         return listaE.toString();
@@ -300,7 +457,12 @@ public class TelaEvento {
     public void addConvidadoIndividualmente() {
         int indiceEvento = Integer.valueOf(JOptionPane.showInputDialog(listarEvento()));
         int indiceContato = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
-        gestorEventos.buscarIndice(--indiceEvento).adicionaParticipante(gestorContatos.buscarIndice(--indiceContato));
+        if(gestorEventos.validarRegras(gestorContatos.buscarIndice(--indiceContato), gestorEventos.buscarIndice(--indiceEvento))){
+            gestorEventos.buscarIndice(--indiceEvento).adicionaParticipante(gestorContatos.buscarIndice(--indiceContato));
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "ERRO! Não foi possivel add o contato.");
+        }
     }
 
     public void removerConvidado() {
@@ -313,7 +475,7 @@ public class TelaEvento {
         int cont = 0;
         StringBuilder contato = new StringBuilder();
         int indiceEvento = Integer.valueOf(JOptionPane.showInputDialog(listarEvento()));
-        for (Contatos conta : gestorEventos.buscarIndice(--indiceEvento).getContatos()) {
+        for (Contato conta : gestorEventos.buscarIndice(--indiceEvento).getContatos()) {
             contato.append(++cont).append(" - ").append(conta.getNome()).append(" ").append(conta.getCelular()).append("\n");
         }
         JOptionPane.showMessageDialog(null, contato.toString());
@@ -325,7 +487,7 @@ public class TelaEvento {
         StringBuilder contato = new StringBuilder();
         int indiceEvento = Integer.valueOf(JOptionPane.showInputDialog(listarEvento()));
         nome = JOptionPane.showInputDialog("Nome contato");
-        Contatos conta = gestorEventos.buscarIndice(--indiceEvento).buscarNome(nome);
+        Contato conta = gestorEventos.buscarIndice(--indiceEvento).buscarNome(nome);
         contato.append(++cont).append(" - ").append(conta.getNome()).append(" ").append(conta.getCelular()).append("\n");
         JOptionPane.showMessageDialog(null, contato.toString());
     }
@@ -335,10 +497,10 @@ public class TelaEvento {
         String nome;
         StringBuilder listaE = new StringBuilder();
         nome = JOptionPane.showInputDialog("Nome contato");
-        List<Eventos> lista_event = new ArrayList<Eventos>();
+        List<Evento> lista_event = new ArrayList<Evento>();
         lista_event = gestorEventos.getEventos();
         for(int i=0; i<lista_event.size(); i++) {
-            Eventos evento = lista_event.get(i);
+            Evento evento = lista_event.get(i);
             if (evento.buscarNome(nome) != null){
                 listaE.append(++cont).append(" - ").append(evento.getTitulo()).append(" ").append(evento.getData()).append("\n");
             }

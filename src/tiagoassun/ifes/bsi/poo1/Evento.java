@@ -1,15 +1,12 @@
 package tiagoassun.ifes.bsi.poo1;
 
-import javax.swing.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
-public class Eventos {
+public class Evento {
 
-    private List<Contatos> contatos;
+    private List<Contato> contatos;
     private String titulo;
     private String local;
     private String endereco;
@@ -22,7 +19,7 @@ public class Eventos {
 
 
 
-    public Eventos() {
+    public Evento() {
         contatos = new ArrayList<>();
     }
 
@@ -90,21 +87,21 @@ public class Eventos {
         this.exclusividade = exclusividade;
     }
 
-    public List<Contatos> getContatos() {
+    public List<Contato> getContatos() {
         return contatos;
     }
 
-    public void adicionaParticipante(Contatos c) {
+    public void adicionaParticipante(Contato c) {
         contatos.add(c);
     }
 
-    public void excluiParticipante(Contatos c) {
+    public void excluiParticipante(Contato c) {
         contatos.remove(c);
     }
 
-    public Contatos buscarNome(String nome){
+    public Contato buscarNome(String nome){
         for(int i=0; i<contatos.size(); i++) {
-            Contatos c = contatos.get(i);
+            Contato c = contatos.get(i);
             if(c.getNome().equalsIgnoreCase(nome))
                 return c;
         }
