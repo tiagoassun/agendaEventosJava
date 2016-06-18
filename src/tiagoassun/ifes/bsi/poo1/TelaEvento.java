@@ -11,9 +11,13 @@ public class TelaEvento {
 
     private StringBuilder menu_gerenciar_contatos;
     private StringBuilder subMenu_criar_contatos;
+
+    private StringBuilder subMenu_gerenciar_relacoes;
     private StringBuilder subMenu_criar_relacao;
     private StringBuilder subMenu_excluir_relacao;
     private StringBuilder subMenu_listar_relacao;
+
+    private StringBuilder subMenu_gerenciar_gostos;
 
     private StringBuilder menu_criar_eventos;
     private StringBuilder menu_gerenciar_convidados_evento;
@@ -29,17 +33,23 @@ public class TelaEvento {
     public TelaEvento() {
         gestorEventos = new GestorEventos();
         gestorContatos = new GestorContatos();
+
         iniciarMenuAgenda();
 
         iniciarMenuGerenciarContatos();
         iniciarSubMenuCriarContato();
+
+        iniciarSubMenuGerenciarRelacoes();
         iniciarSubMenuCriarRelacao();
         iniciarSubMenuExcluirRelacao();
         iniciarSubMenuListarRelacao();
 
+        iniciarSubMenuGerenciarGostos();
+
         iniciarMenuCriarEventos();
         iniciarMenuGerenciarConvidadosEvento();
     }
+
 
     private void iniciarMenuAgenda() {
         menu_agenda = new StringBuilder();
@@ -56,18 +66,26 @@ public class TelaEvento {
         menu_gerenciar_contatos.append("3 - Excluir Contato").append("\n");
         menu_gerenciar_contatos.append("4 - Pesquisar Contato").append("\n");
         menu_gerenciar_contatos.append("5 - Listar Contato").append("\n");
-        menu_gerenciar_contatos.append("6 - Criar Relação").append("\n");
-        menu_gerenciar_contatos.append("7 - Excluir Relação").append("\n");
-        menu_gerenciar_contatos.append("8 - Listar Relação").append("\n");
+        menu_gerenciar_contatos.append("6 - Gerenciar Relações").append("\n");
+        menu_gerenciar_contatos.append("7 - Gerenciar Gostos").append("\n");
         menu_gerenciar_contatos.append("0 - Voltar").append("\n");
     }
 
     private void iniciarSubMenuCriarContato() {
         subMenu_criar_contatos = new StringBuilder();
-        subMenu_criar_contatos.append("1 - Amigo").append("\n");
-        subMenu_criar_contatos.append("2 - Colega").append("\n");
-        subMenu_criar_contatos.append("3 - Familiar").append("\n");
+        subMenu_criar_contatos.append("1 - Adicionar Amigo").append("\n");
+        subMenu_criar_contatos.append("2 - Adicionar Colega").append("\n");
+        subMenu_criar_contatos.append("3 - Adicionar Familiar").append("\n");
         subMenu_criar_contatos.append("0 - Voltar").append("\n");
+    }
+
+
+    private void iniciarSubMenuGerenciarRelacoes() {
+        subMenu_gerenciar_relacoes = new StringBuilder();
+        subMenu_gerenciar_relacoes.append("1 - Criar Relação").append("\n");
+        subMenu_gerenciar_relacoes.append("2 - Excluir Relação").append("\n");
+        subMenu_gerenciar_relacoes.append("3 - Listar Relação").append("\n");
+        subMenu_gerenciar_relacoes.append("0 - Voltar").append("\n");
     }
 
     private void iniciarSubMenuCriarRelacao() {
@@ -94,6 +112,18 @@ public class TelaEvento {
         subMenu_listar_relacao.append("0 - Voltar").append("\n");
     }
 
+
+    private void iniciarSubMenuGerenciarGostos(){
+        subMenu_gerenciar_gostos = new StringBuilder();
+        subMenu_gerenciar_gostos.append("1 - Adicionar Gosto").append("\n");
+        subMenu_gerenciar_gostos.append("2 - Adicionar Tipo de Evento do Gostos").append("\n");
+        subMenu_gerenciar_gostos.append("3 - Excluir Gosto").append("\n");
+        subMenu_gerenciar_gostos.append("4 - Excluir Tipo de Evento do Gostos").append("\n");
+        subMenu_gerenciar_gostos.append("5 - Listar Gosto e Tipos de Eventos").append("\n");
+        subMenu_gerenciar_gostos.append("0 - Voltar").append("\n");
+    }
+
+
     private void iniciarMenuCriarEventos() {
         menu_criar_eventos = new StringBuilder();
         menu_criar_eventos.append("1 - Criar Evento").append("\n");
@@ -115,6 +145,9 @@ public class TelaEvento {
         menu_gerenciar_convidados_evento.append("0 - Voltar").append("\n");
     }
 
+
+
+
     void executar() {
         while (true) {
             switch (Integer.parseInt(mostrarMenuAgenda())) {
@@ -132,6 +165,7 @@ public class TelaEvento {
             }
         }
     }
+
 
     void executarMenuGerenciarContatos() {
         while (true) {
@@ -155,13 +189,10 @@ public class TelaEvento {
                     listaConta();
                     break;
                 case 6:
-                    executarSubMenuCriarRelacao();
+                    executarSubMenuGerenciarRelacoes();
                     break;
                 case 7:
-                    executarSubMenuExcluirRelacao();
-                    break;
-                case 8:
-                    executarSubMenuListarRelacao();
+                    executarSubMenuGerenciarGostos();
                     break;
             }
         }
@@ -186,6 +217,26 @@ public class TelaEvento {
         }
     }
 
+
+    void executarSubMenuGerenciarRelacoes() {
+        while (true){
+            switch (Integer.parseInt(mostrarSubMenuGerenciarRelacoes())) {
+                case 0:
+                    executarMenuGerenciarContatos();
+                    break;
+                case 1:
+                    executarSubMenuCriarRelacao();
+                    break;
+                case 2:
+                    executarSubMenuExcluirRelacao();
+                    break;
+                case 3:
+                    executarSubMenuListarRelacao();
+                    break;
+            }
+        }
+    }
+
     void executarSubMenuCriarRelacao() {
         while (true){
             switch (Integer.parseInt(mostrarSubMenuCriarRelacao())) {
@@ -193,13 +244,13 @@ public class TelaEvento {
                     executarMenuGerenciarContatos();
                     break;
                 case 1:
-                    criarRelacaoAmigo();
+                    adicionarRelacaoAmigo();
                     break;
                 case 2:
-                    criarRelacaoColega();
+                    adicionarRelacaoColega();
                     break;
                 case 3:
-                    criarRelacaoFamiliar();
+                    adicionarRelacaoFamiliar();
                     break;
             }
         }
@@ -207,7 +258,7 @@ public class TelaEvento {
 
     void executarSubMenuExcluirRelacao() {
         while (true){
-            switch (Integer.parseInt(mostrarSubMenuCriarRelacao())) {
+            switch (Integer.parseInt(mostrarSubMenuExcluirRelacao())) {
                 case 0:
                     executarMenuGerenciarContatos();
                     break;
@@ -226,7 +277,7 @@ public class TelaEvento {
 
     void executarSubMenuListarRelacao() {
         while (true){
-            switch (Integer.parseInt(mostrarSubMenuCriarRelacao())) {
+            switch (Integer.parseInt(mostrarSubMenuListarRelacao())) {
                 case 0:
                     executarMenuGerenciarContatos();
                     break;
@@ -242,6 +293,33 @@ public class TelaEvento {
             }
         }
     }
+
+
+    void executarSubMenuGerenciarGostos() {
+        while (true){
+            switch (Integer.parseInt(mostrarSubMenuGerenciarGostos())) {
+                case 0:
+                    executarMenuGerenciarContatos();
+                    break;
+                case 1:
+                    adicionarGosto();
+                    break;
+                case 2:
+                    adicionarGostoTipoEvento();
+                    break;
+                case 3:
+                    excluirGosto();
+                    break;
+                case 4:
+                    excluirGostoTipoEvento();
+                    break;
+                case 5:
+                    ;
+                    break;
+            }
+        }
+    }
+
 
     void executarMenuCriarEventos() {
         while (true) {
@@ -296,6 +374,9 @@ public class TelaEvento {
         }
     }
 
+
+
+
     private String mostrarMenuAgenda() {
         return JOptionPane.showInputDialog(null, menu_agenda);
     }
@@ -309,8 +390,26 @@ public class TelaEvento {
         return JOptionPane.showInputDialog(null, subMenu_criar_contatos);
     }
 
+
+    private String mostrarSubMenuGerenciarRelacoes() {
+        return JOptionPane.showInputDialog(null, subMenu_gerenciar_relacoes);
+    }
+
     private String mostrarSubMenuCriarRelacao() {
-        return JOptionPane.showInputDialog(null, subMenu_criar_contatos);
+        return JOptionPane.showInputDialog(null, subMenu_criar_relacao);
+    }
+
+    private String mostrarSubMenuExcluirRelacao() {
+        return JOptionPane.showInputDialog(null, subMenu_excluir_relacao);
+    }
+
+    private String mostrarSubMenuListarRelacao() {
+        return JOptionPane.showInputDialog(null, subMenu_listar_relacao);
+    }
+
+
+    private String mostrarSubMenuGerenciarGostos() {
+        return JOptionPane.showInputDialog(null, subMenu_gerenciar_gostos);
     }
 
 
@@ -321,6 +420,11 @@ public class TelaEvento {
     private String mostrarMenuGerenciarConvidadosEvento() {
         return JOptionPane.showInputDialog(null, menu_gerenciar_convidados_evento);
     }
+
+
+
+
+
 
 
 
@@ -431,7 +535,8 @@ public class TelaEvento {
         return contato.toString();
     }
 
-    public void criarRelacaoAmigo() {
+
+    public void adicionarRelacaoAmigo() {
         int indice1 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta1 = gestorContatos.buscarIndice(--indice1);
         int indice2 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
@@ -440,7 +545,7 @@ public class TelaEvento {
         conta2.relacoes.adicionarAmigo(conta1);
     }
 
-    public void criarRelacaoColega() {
+    public void adicionarRelacaoColega() {
         int indice1 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta1 = gestorContatos.buscarIndice(--indice1);
         int indice2 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
@@ -449,7 +554,7 @@ public class TelaEvento {
         conta2.relacoes.adicionarColega(conta1);
     }
 
-    public void criarRelacaoFamiliar() {
+    public void adicionarRelacaoFamiliar() {
         int indice1 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta1 = gestorContatos.buscarIndice(--indice1);
         int indice2 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
@@ -496,6 +601,52 @@ public class TelaEvento {
         Contato conta = gestorContatos.buscarIndice(--indice);
         JOptionPane.showMessageDialog(null, conta.relacoes.listarRelacoesFamiliares());
     }
+
+
+    public void adicionarGosto() {
+        String nome_gosto;
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta = gestorContatos.buscarIndice(--indice);
+        nome_gosto = JOptionPane.showInputDialog("Nome gosto");
+        conta.gotos.adicionarGosto(nome_gosto);
+    }
+
+    public void adicionarGostoTipoEvento() {
+        String nome_gosto_tipo_evento;
+        String nome_gosto;
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta = gestorContatos.buscarIndice(--indice);
+        nome_gosto = JOptionPane.showInputDialog("Nome gosto");
+        nome_gosto_tipo_evento = JOptionPane.showInputDialog("Nome tipo evento");
+        conta.gotos.adicionarGostoTipoEvento(nome_gosto, nome_gosto_tipo_evento);
+    }
+
+    public void excluirGosto() {
+        String nome_gosto;
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta = gestorContatos.buscarIndice(--indice);
+        nome_gosto = JOptionPane.showInputDialog("Nome gosto");
+        conta.gotos.excluirGosto(nome_gosto);
+    }
+
+    public void excluirGostoTipoEvento() {
+        String nome_gosto_tipo_evento;
+        String nome_gosto;
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta = gestorContatos.buscarIndice(--indice);
+        nome_gosto = JOptionPane.showInputDialog("Nome gosto");
+        nome_gosto_tipo_evento = JOptionPane.showInputDialog("Nome tipo evento");
+        conta.gotos.excluirGostoTipoEvento(nome_gosto, nome_gosto_tipo_evento);
+    }
+
+    public void listarGostosETiposEvento(){
+
+    }
+
+
+
+
+
 
 
 
@@ -553,6 +704,11 @@ public class TelaEvento {
         }
         return listaE.toString();
     }
+
+
+
+
+
 
 
 
