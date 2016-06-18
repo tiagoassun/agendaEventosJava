@@ -314,7 +314,7 @@ public class TelaEvento {
                     excluirGostoTipoEvento();
                     break;
                 case 5:
-                    ;
+                    listarGostosETiposEvento();
                     break;
             }
         }
@@ -640,7 +640,9 @@ public class TelaEvento {
     }
 
     public void listarGostosETiposEvento(){
-
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta = gestorContatos.buscarIndice(--indice);
+        JOptionPane.showMessageDialog(null, conta.gotos.listarGostosETiposEvento());
     }
 
 

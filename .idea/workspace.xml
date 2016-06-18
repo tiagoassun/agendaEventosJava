@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0724e5f5-db39-4321-9f69-142dda77fc94" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/agendaEventosJava/tiagoassun/ifes/bsi/poo1/TelaEvento.class" afterPath="$PROJECT_DIR$/out/production/agendaEventosJava/tiagoassun/ifes/bsi/poo1/TelaEvento.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java" afterPath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java" />
     </list>
@@ -27,26 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Gostos.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Gostos.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-              <folding>
-                <element signature="e#226#253#0" expanded="true" />
-                <element signature="e#411#419#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#713#714#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TelaEvento.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TelaEvento.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="642" column="0" selection-start-line="642" selection-start-column="0" selection-end-line="642" selection-end-column="0" />
+            <state relative-caret-position="-1055">
+              <caret line="316" column="45" selection-start-line="316" selection-start-column="45" selection-end-line="316" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#TelaEvento#0;class#TelaEvento#0" expanded="false" />
@@ -67,7 +51,6 @@
                 <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#executarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
@@ -86,13 +69,13 @@
                 <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#listarRelacoesAmigos#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
+                <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
@@ -103,6 +86,35 @@
                 <element signature="method#listarConvidadosDoEvento#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#listarContatoEmEvento#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#listarEventosDoContato#0;class#TelaEvento#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Relacao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Relacao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="95" column="4" selection-start-line="94" selection-start-column="0" selection-end-line="100" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gostos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Gostos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+              <folding>
+                <element signature="e#226#253#0" expanded="true" />
+                <element signature="method#adicionarGosto#0;class#Gostos#0" expanded="false" />
+                <element signature="e#411#419#0" expanded="true" />
+                <element signature="method#adicionarGostoTipoEvento#0;class#Gostos#0" expanded="false" />
+                <element signature="method#excluirGostoTipoEvento#0;class#Gostos#0" expanded="false" />
+                <element signature="method#existeGosto#0;class#Gostos#0" expanded="false" />
+                <element signature="method#existeGostoTipoEvento#0;class#Gostos#0" expanded="false" />
+                <element signature="method#listarGostosETiposEvento#0;class#Gostos#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -708,7 +720,7 @@
       <workItem from="1466200723321" duration="187000" />
       <workItem from="1466201220969" duration="5919000" />
       <workItem from="1466208889057" duration="5454000" />
-      <workItem from="1466251258246" duration="16790000" />
+      <workItem from="1466251258246" duration="19446000" />
     </task>
     <task id="LOCAL-00001" summary="CRUD de Contatos e Eventos quase pronto, faltando o 'alterar' em ambos.">
       <created>1466017645583</created>
@@ -766,11 +778,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466259349269</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Faltando listar gosto e tipos de eventos dos gostos e fazer metodo de validar Regras.">
+      <created>1466277947190</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1466277947190</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76163000" />
+    <option name="totallyTimeSpent" value="78819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -783,7 +802,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33802816" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -848,11 +867,12 @@
     <MESSAGE value="Todos os CRUD's em funcinamento, porem sem tratamento de erros. Faltando configurar as Regras de eventos." />
     <MESSAGE value="Faltando fazer metodo de add Gostos e Regras." />
     <MESSAGE value="Excluir relação e listar relação feitos, faltando fazer metodo de add Gostos e Regras." />
-    <option name="LAST_COMMIT_MESSAGE" value="Excluir relação e listar relação feitos, faltando fazer metodo de add Gostos e Regras." />
+    <MESSAGE value="Faltando listar gosto e tipos de eventos dos gostos e fazer metodo de validar Regras." />
+    <option name="LAST_COMMIT_MESSAGE" value="Faltando listar gosto e tipos de eventos dos gostos e fazer metodo de validar Regras." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="45" />
+      <option name="time" value="46" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -944,7 +964,6 @@
             <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
@@ -963,13 +982,13 @@
             <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesAmigos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
@@ -1045,7 +1064,6 @@
             <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
@@ -1064,13 +1082,13 @@
             <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesAmigos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
@@ -1154,7 +1172,6 @@
             <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
@@ -1173,13 +1190,13 @@
             <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesAmigos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
@@ -1249,7 +1266,6 @@
             <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
@@ -1268,13 +1284,13 @@
             <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesAmigos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
@@ -1360,7 +1376,6 @@
             <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
@@ -1379,13 +1394,13 @@
             <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesAmigos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
@@ -1469,7 +1484,6 @@
             <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
@@ -1488,13 +1502,13 @@
             <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesAmigos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
@@ -1578,7 +1592,6 @@
             <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
@@ -1597,13 +1610,13 @@
             <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesAmigos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
@@ -1764,25 +1777,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Gostos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+          <folding>
+            <element signature="e#226#253#0" expanded="true" />
+            <element signature="method#adicionarGosto#0;class#Gostos#0" expanded="false" />
+            <element signature="e#411#419#0" expanded="true" />
+            <element signature="method#adicionarGostoTipoEvento#0;class#Gostos#0" expanded="false" />
+            <element signature="method#excluirGostoTipoEvento#0;class#Gostos#0" expanded="false" />
+            <element signature="method#existeGosto#0;class#Gostos#0" expanded="false" />
+            <element signature="method#existeGostoTipoEvento#0;class#Gostos#0" expanded="false" />
+            <element signature="method#listarGostosETiposEvento#0;class#Gostos#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Relacao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
-          <folding>
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="538">
+          <caret line="95" column="4" selection-start-line="94" selection-start-column="0" selection-end-line="100" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="642" column="0" selection-start-line="642" selection-start-column="0" selection-end-line="642" selection-end-column="0" />
+        <state relative-caret-position="-1055">
+          <caret line="316" column="45" selection-start-line="316" selection-start-column="45" selection-end-line="316" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#TelaEvento#0;class#TelaEvento#0" expanded="false" />
@@ -1803,7 +1826,6 @@
             <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
@@ -1822,13 +1844,13 @@
             <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesAmigos#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
@@ -1839,19 +1861,6 @@
             <element signature="method#listarConvidadosDoEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarContatoEmEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#listarEventosDoContato#0;class#TelaEvento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Gostos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding>
-            <element signature="e#226#253#0" expanded="true" />
-            <element signature="e#411#419#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
           </folding>
         </state>
       </provider>
