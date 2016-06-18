@@ -12,6 +12,8 @@ public class TelaEvento {
     private StringBuilder menu_gerenciar_contatos;
     private StringBuilder subMenu_criar_contatos;
     private StringBuilder subMenu_criar_relacao;
+    private StringBuilder subMenu_excluir_relacao;
+    private StringBuilder subMenu_listar_relacao;
 
     private StringBuilder menu_criar_eventos;
     private StringBuilder menu_gerenciar_convidados_evento;
@@ -32,6 +34,8 @@ public class TelaEvento {
         iniciarMenuGerenciarContatos();
         iniciarSubMenuCriarContato();
         iniciarSubMenuCriarRelacao();
+        iniciarSubMenuExcluirRelacao();
+        iniciarSubMenuListarRelacao();
 
         iniciarMenuCriarEventos();
         iniciarMenuGerenciarConvidadosEvento();
@@ -53,6 +57,8 @@ public class TelaEvento {
         menu_gerenciar_contatos.append("4 - Pesquisar Contato").append("\n");
         menu_gerenciar_contatos.append("5 - Listar Contato").append("\n");
         menu_gerenciar_contatos.append("6 - Criar Relação").append("\n");
+        menu_gerenciar_contatos.append("7 - Excluir Relação").append("\n");
+        menu_gerenciar_contatos.append("8 - Listar Relação").append("\n");
         menu_gerenciar_contatos.append("0 - Voltar").append("\n");
     }
 
@@ -66,10 +72,26 @@ public class TelaEvento {
 
     private void iniciarSubMenuCriarRelacao() {
         subMenu_criar_relacao = new StringBuilder();
-        subMenu_criar_relacao.append("1 - Relação Amigo").append("\n");
-        subMenu_criar_relacao.append("2 - Relação Colega").append("\n");
-        subMenu_criar_relacao.append("3 - Relação Familiar").append("\n");
+        subMenu_criar_relacao.append("1 - Criar Relação Amigo").append("\n");
+        subMenu_criar_relacao.append("2 - Criar Relação Colega").append("\n");
+        subMenu_criar_relacao.append("3 - Criar Relação Familiar").append("\n");
         subMenu_criar_relacao.append("0 - Voltar").append("\n");
+    }
+
+    private void iniciarSubMenuExcluirRelacao() {
+        subMenu_excluir_relacao = new StringBuilder();
+        subMenu_excluir_relacao.append("1 - Excluir Relação Amigo").append("\n");
+        subMenu_excluir_relacao.append("2 - Excluir Relação Colega").append("\n");
+        subMenu_excluir_relacao.append("3 - Excluir Relação Familiar").append("\n");
+        subMenu_excluir_relacao.append("0 - Voltar").append("\n");
+    }
+
+    private void iniciarSubMenuListarRelacao() {
+        subMenu_listar_relacao = new StringBuilder();
+        subMenu_listar_relacao.append("1 - Listar Relação Amigo").append("\n");
+        subMenu_listar_relacao.append("2 - Listar Relação Colega").append("\n");
+        subMenu_listar_relacao.append("3 - Listar Relação Familiar").append("\n");
+        subMenu_listar_relacao.append("0 - Voltar").append("\n");
     }
 
     private void iniciarMenuCriarEventos() {
@@ -135,6 +157,12 @@ public class TelaEvento {
                 case 6:
                     executarSubMenuCriarRelacao();
                     break;
+                case 7:
+                    executarSubMenuExcluirRelacao();
+                    break;
+                case 8:
+                    executarSubMenuListarRelacao();
+                    break;
             }
         }
     }
@@ -172,6 +200,44 @@ public class TelaEvento {
                     break;
                 case 3:
                     criarRelacaoFamiliar();
+                    break;
+            }
+        }
+    }
+
+    void executarSubMenuExcluirRelacao() {
+        while (true){
+            switch (Integer.parseInt(mostrarSubMenuCriarRelacao())) {
+                case 0:
+                    executarMenuGerenciarContatos();
+                    break;
+                case 1:
+                    excluirRelacaoAmigo();
+                    break;
+                case 2:
+                    excluirRelacaoColega();
+                    break;
+                case 3:
+                    excluirRelacaoFamiliar();
+                    break;
+            }
+        }
+    }
+
+    void executarSubMenuListarRelacao() {
+        while (true){
+            switch (Integer.parseInt(mostrarSubMenuCriarRelacao())) {
+                case 0:
+                    executarMenuGerenciarContatos();
+                    break;
+                case 1:
+                    listarRelacoesAmigos();
+                    break;
+                case 2:
+                    listarRelacoesColegas();
+                    break;
+                case 3:
+                    listarRelacoesFamiliares();
                     break;
             }
         }
@@ -390,6 +456,45 @@ public class TelaEvento {
         Contato conta2 = gestorContatos.buscarIndice(--indice2);
         conta1.relacoes.adicionarFamiliar(conta2);
         conta2.relacoes.adicionarFamiliar(conta1);
+    }
+
+    public void excluirRelacaoAmigo() {
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta = gestorContatos.buscarIndice(--indice);
+        String nome = JOptionPane.showInputDialog(conta.relacoes.listarRelacoesAmigos());
+        conta.relacoes.excluirAmigo(gestorContatos.buscarNome(nome));
+    }
+
+    public void excluirRelacaoColega() {
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta = gestorContatos.buscarIndice(--indice);
+        String nome = JOptionPane.showInputDialog(conta.relacoes.listarRelacoesColegas());
+        conta.relacoes.excluirColega(gestorContatos.buscarNome(nome));
+    }
+
+    public void excluirRelacaoFamiliar() {
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta = gestorContatos.buscarIndice(--indice);
+        String nome = JOptionPane.showInputDialog(conta.relacoes.listarRelacoesFamiliares());
+        conta.relacoes.excluirFamiliar(gestorContatos.buscarNome(nome));
+    }
+
+    public void listarRelacoesAmigos(){
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta = gestorContatos.buscarIndice(--indice);
+        JOptionPane.showMessageDialog(null, conta.relacoes.listarRelacoesAmigos());
+    }
+
+    public void listarRelacoesColegas(){
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta = gestorContatos.buscarIndice(--indice);
+        JOptionPane.showMessageDialog(null, conta.relacoes.listarRelacoesColegas());
+    }
+
+    public void listarRelacoesFamiliares(){
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta = gestorContatos.buscarIndice(--indice);
+        JOptionPane.showMessageDialog(null, conta.relacoes.listarRelacoesFamiliares());
     }
 
 
