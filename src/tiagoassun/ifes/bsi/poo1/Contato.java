@@ -21,7 +21,7 @@ public class Contato implements Autenticar{
     private String proximidade;
 
     public Relacao relacoes = new Relacao();
-    public Gostos gotos = new Gostos();
+    public ArrayList<String> gostos = new ArrayList<String>();
 
 
 

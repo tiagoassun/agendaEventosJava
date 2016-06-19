@@ -20,6 +20,7 @@ public class TelaEvento {
     private StringBuilder subMenu_gerenciar_gostos;
 
     private StringBuilder menu_criar_eventos;
+    private StringBuilder subMenu_criar_gerenciar_grupos_eventos;
     private StringBuilder menu_gerenciar_convidados_evento;
 
     private GestorEventos gestorEventos;
@@ -47,6 +48,7 @@ public class TelaEvento {
         iniciarSubMenuGerenciarGostos();
 
         iniciarMenuCriarEventos();
+        iniciarSubMenuGerenciarGruposEvento();
         iniciarMenuGerenciarConvidadosEvento();
     }
 
@@ -68,6 +70,7 @@ public class TelaEvento {
         menu_gerenciar_contatos.append("5 - Listar Contato").append("\n");
         menu_gerenciar_contatos.append("6 - Gerenciar Relações").append("\n");
         menu_gerenciar_contatos.append("7 - Gerenciar Gostos").append("\n");
+        menu_gerenciar_contatos.append("8 - Adicionar Gosto a Contato").append("\n");
         menu_gerenciar_contatos.append("0 - Voltar").append("\n");
     }
 
@@ -131,8 +134,22 @@ public class TelaEvento {
         menu_criar_eventos.append("3 - Excluir Evento").append("\n");
         menu_criar_eventos.append("4 - Pesquisar Evento").append("\n");
         menu_criar_eventos.append("5 - Listar Evento").append("\n");
+        menu_criar_eventos.append("6 - Gerenciar Grupos de Evento").append("\n");
         menu_criar_eventos.append("0 - Voltar").append("\n");
     }
+
+    private void iniciarSubMenuGerenciarGruposEvento() {
+        subMenu_criar_gerenciar_grupos_eventos = new StringBuilder();
+        subMenu_criar_gerenciar_grupos_eventos.append("1 - Adicionar Tipo Evento Social").append("\n");
+        subMenu_criar_gerenciar_grupos_eventos.append("2 - Adicionar Tipo Evento Profissional").append("\n");
+        subMenu_criar_gerenciar_grupos_eventos.append("3 - Adicionar Tipo Evento Familiar").append("\n");
+        subMenu_criar_gerenciar_grupos_eventos.append("4 - Excluir Tipo Evento Social").append("\n");
+        subMenu_criar_gerenciar_grupos_eventos.append("5 - Excluir Tipo Evento Profissional").append("\n");
+        subMenu_criar_gerenciar_grupos_eventos.append("6 - Excluir Tipo Evento Familiar").append("\n");
+        subMenu_criar_gerenciar_grupos_eventos.append("7 - Listar Tipo Evento ").append("\n");
+        subMenu_criar_gerenciar_grupos_eventos.append("0 - Voltar").append("\n");
+    }
+
 
     private void iniciarMenuGerenciarConvidadosEvento() {
         menu_gerenciar_convidados_evento = new StringBuilder();
@@ -193,6 +210,9 @@ public class TelaEvento {
                     break;
                 case 7:
                     executarSubMenuGerenciarGostos();
+                    break;
+                case  8:
+                    adicionarGostoAContato();
                     break;
             }
         }
@@ -342,6 +362,40 @@ public class TelaEvento {
                 case 5:
                     listaEvent();
                     break;
+                case 6:
+                    executarSubMenuGerenciarGruposEvento();
+                    break;
+            }
+        }
+    }
+
+    void executarSubMenuGerenciarGruposEvento() {
+        while (true) {
+            switch (Integer.parseInt((mostrarSubMenuGerenciarGruposEvento()))) {
+                case 0:
+                    executarMenuCriarEventos();
+                    break;
+                case 1:
+                    adicionarTipoEventoSocial();
+                    break;
+                case 2:
+                    adicionarTipoEventoProfissional();
+                    break;
+                case 3:
+                    adicionarTipoEventoFamiliar();
+                    break;
+                case 4:
+                    excluirTipoEventoSocial();
+                    break;
+                case 5:
+                    excluirTipoEventoProfissional();
+                    break;
+                case 6:
+                    excluirTipoEventoFamiliar();
+                    break;
+                case 7:
+                    listarTipoEventos();
+                    break;
             }
         }
     }
@@ -415,6 +469,10 @@ public class TelaEvento {
 
     private String mostrarMenuCriarEventos() {
         return JOptionPane.showInputDialog(null, menu_criar_eventos);
+    }
+
+    private String mostrarSubMenuGerenciarGruposEvento() {
+        return JOptionPane.showInputDialog(null, subMenu_criar_gerenciar_grupos_eventos);
     }
 
     private String mostrarMenuGerenciarConvidadosEvento() {
@@ -535,6 +593,13 @@ public class TelaEvento {
         return contato.toString();
     }
 
+    public void adicionarGostoAContato() {
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
+        Contato conta = gestorContatos.buscarIndice(--indice);
+        JOptionPane.showInputDialog(gestorContatos.gotos.listarGostosETiposEvento());
+        conta.gostos = gestorContatos.gotos.buscarGosto("");
+    }
+
 
     public void adicionarRelacaoAmigo() {
         int indice1 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
@@ -605,44 +670,34 @@ public class TelaEvento {
 
     public void adicionarGosto() {
         String nome_gosto;
-        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
-        Contato conta = gestorContatos.buscarIndice(--indice);
         nome_gosto = JOptionPane.showInputDialog("Nome gosto");
-        conta.gotos.adicionarGosto(nome_gosto);
+        gestorContatos.gotos.adicionarGosto(nome_gosto);
     }
 
     public void adicionarGostoTipoEvento() {
         String nome_gosto_tipo_evento;
         String nome_gosto;
-        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
-        Contato conta = gestorContatos.buscarIndice(--indice);
         nome_gosto = JOptionPane.showInputDialog("Nome gosto");
         nome_gosto_tipo_evento = JOptionPane.showInputDialog("Nome tipo evento");
-        conta.gotos.adicionarGostoTipoEvento(nome_gosto, nome_gosto_tipo_evento);
+        gestorContatos.gotos.adicionarGostoTipoEvento(nome_gosto, nome_gosto_tipo_evento);
     }
 
     public void excluirGosto() {
         String nome_gosto;
-        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
-        Contato conta = gestorContatos.buscarIndice(--indice);
         nome_gosto = JOptionPane.showInputDialog("Nome gosto");
-        conta.gotos.excluirGosto(nome_gosto);
+        gestorContatos.gotos.excluirGosto(nome_gosto);
     }
 
     public void excluirGostoTipoEvento() {
         String nome_gosto_tipo_evento;
         String nome_gosto;
-        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
-        Contato conta = gestorContatos.buscarIndice(--indice);
         nome_gosto = JOptionPane.showInputDialog("Nome gosto");
         nome_gosto_tipo_evento = JOptionPane.showInputDialog("Nome tipo evento");
-        conta.gotos.excluirGostoTipoEvento(nome_gosto, nome_gosto_tipo_evento);
+        gestorContatos.gotos.excluirGostoTipoEvento(nome_gosto, nome_gosto_tipo_evento);
     }
 
-    public void listarGostosETiposEvento(){
-        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
-        Contato conta = gestorContatos.buscarIndice(--indice);
-        JOptionPane.showMessageDialog(null, conta.gotos.listarGostosETiposEvento());
+    public void listarGostosETiposEvento() {
+        JOptionPane.showMessageDialog(null, gestorContatos.gotos.listarGostosETiposEvento());
     }
 
 
@@ -656,22 +711,58 @@ public class TelaEvento {
 
     // FUNÇÕES DE “CRIAR EVENTOS”
     private void criarEvento() {
+        StringBuilder exclusividade = new StringBuilder();
+        StringBuilder grupo_evento = new StringBuilder();
         Evento evento = new Evento();
-        evento.setTitulo(JOptionPane.showInputDialog("Título do Evento"));
-        evento.setData(JOptionPane.showInputDialog("Data"));
-        evento.setLocal(JOptionPane.showInputDialog("Local"));
+        evento.setTitulo(JOptionPane.showInputDialog("Título do evento"));
+        evento.setLocal(JOptionPane.showInputDialog("Local do evento"));
+        evento.setEndereco(JOptionPane.showInputDialog("Endereço do evento"));
+        evento.setData(JOptionPane.showInputDialog("Data do evento"));
+        evento.setHora(JOptionPane.showInputDialog("Hora do evento"));
+        evento.setNumero_maximo(Integer.valueOf(JOptionPane.showInputDialog("Numero maximo de participantes")));
+        evento.setValorEntrada(Integer.valueOf(JOptionPane.showInputDialog("Valor da entreada")));
+        exclusividade.append("Exclusividade do evento: ").append("\n");
+        exclusividade.append("1 - ").append("Evento Fechado").append("\n");
+        exclusividade.append("2 - ").append("Evento Reservado").append("\n");
+        exclusividade.append("3 - ").append("Evento Regular").append("\n");
+        exclusividade.append("4 - ").append("Evento Aberto").append("\n");
+        switch (Integer.parseInt(JOptionPane.showInputDialog(exclusividade.toString()))) {
+            case 1:
+                evento.setExclusividade("Evento Fechado");;
+                break;
+            case 2:
+                evento.setExclusividade("Evento Reservado");;
+                break;
+            case 3:
+                evento.setExclusividade("Evento Regular");;
+                break;
+            case 4:
+                evento.setExclusividade("Evento Aberto");;
+                break;
+        }
+        grupo_evento.append("Grupo do evento: ").append("\n");
+        grupo_evento.append("1 - ").append("Evento Social").append("\n");
+        grupo_evento.append("2 - ").append("Evento Profissional").append("\n");
+        grupo_evento.append("3 - ").append("Evento Familiar").append("\n");
+        switch (Integer.parseInt(JOptionPane.showInputDialog(exclusividade.toString()))) {
+            case 1:
+                evento.setGrupo_evento(gestorEventos.grupoEvento.getMap_evento_social());
+                break;
+            case 2:
+                evento.setGrupo_evento(gestorEventos.grupoEvento.getMap_evento_profissional());
+                break;
+            case 3:
+                evento.setGrupo_evento(gestorEventos.grupoEvento.getMap_evento_familiar());
+                break;
+        }
         gestorEventos.adicionaEvento(evento);
     }
 
     public void editarEvento() {
-        String nome;
-        nome = (JOptionPane.showInputDialog("Nome evento"));
-        Evento evento = gestorEventos.buscarNome(nome);
-        gestorEventos.excluiEventoNome(nome);
-        evento.setTitulo(JOptionPane.showInputDialog("Título do Evento"));
-        evento.setData(JOptionPane.showInputDialog("Data"));
-        evento.setLocal(JOptionPane.showInputDialog("Local"));
-        gestorEventos.adicionaEvento(evento);
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(listarEvento()));
+        Evento evento = gestorEventos.buscarIndice(--indice);
+        gestorEventos.excluiEvento(--indice);
+        criarEvento();
     }
 
     private void excluirEvento() {
@@ -705,6 +796,42 @@ public class TelaEvento {
             listaE.append(++cont).append(" - ").append(evento.getTitulo()).append(" ").append(evento.getData()).append("\n");
         }
         return listaE.toString();
+    }
+
+
+    private void adicionarTipoEventoSocial() {
+        gestorEventos.grupoEvento.adicionarTipoEventoSocial(JOptionPane.showInputDialog(gestorEventos.grupoEvento.listarTipoEventosSocial()));
+    }
+
+    private void adicionarTipoEventoProfissional() {
+        gestorEventos.grupoEvento.adicionarTipoEventoProfissional(JOptionPane.showInputDialog(gestorEventos.grupoEvento.listarTipoEventosProfissional()));
+    }
+
+    private void adicionarTipoEventoFamiliar() {
+        gestorEventos.grupoEvento.adicionarTipoEventoFamiliar(JOptionPane.showInputDialog(gestorEventos.grupoEvento.listarTipoEventosFamiliar()));
+    }
+
+    private void excluirTipoEventoSocial() {
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(gestorEventos.grupoEvento.listarTipoEventosSocial()));
+        gestorEventos.grupoEvento.excluirTipoEventoSocial(--indice);
+    }
+
+    private void excluirTipoEventoProfissional() {
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(gestorEventos.grupoEvento.listarTipoEventosProfissional()));
+        gestorEventos.grupoEvento.excluirTipoEventoProfissional(--indice);
+    }
+
+    private void excluirTipoEventoFamiliar() {
+        int indice = Integer.valueOf(JOptionPane.showInputDialog(gestorEventos.grupoEvento.listarTipoEventosFamiliar()));
+        gestorEventos.grupoEvento.excluirTipoEventoFamiliar(--indice);
+    }
+
+    private void listarTipoEventos() {
+        String list_event;
+        list_event = gestorEventos.grupoEvento.listarTipoEventosSocial();
+        list_event += gestorEventos.grupoEvento.listarTipoEventosProfissional();
+        list_event += gestorEventos.grupoEvento.listarTipoEventosFamiliar();
+        JOptionPane.showMessageDialog(null, list_event);
     }
 
 
