@@ -152,21 +152,21 @@ public class Contato implements Autenticar{
             else if (!(grupo_event == "Evento Profissional" && (this instanceof Amigo || this instanceof Colega))) {
                 return false;
             }
-            else if (!(grupo_event == "Evento Profissional" && (this instanceof Familiar || (this instanceof Amigo && proximidade == "Muito próximos")))) {
+            else if (!(grupo_event == "Evento Familiar" && (this instanceof Familiar || (this instanceof Amigo && proximidade == "Muito próximo")))) {
                 return false;
             }
         }
 
-        if (!(event.getExclusividade() == "Evento Fechado" && proximidade == "Muito próximos")){
+        if (!(event.getExclusividade() == "Evento Fechado" && proximidade == "Muito próximo")){
             return false;
         }
-        else if (!(event.getExclusividade() == "Evento Reservado" && (proximidade == "Muito próximos" || proximidade == "Próximos"))){
+        else if (!(event.getExclusividade() == "Evento Reservado" && (proximidade == "Muito próximo" || proximidade == "Próximo"))){
             return false;
         }
-        else if (!(event.getExclusividade() == "Evento Regular" && (proximidade == "Muito próximos" || proximidade == "Próximos" || proximidade == "Regulares"))){
+        else if (!(event.getExclusividade() == "Evento Regular" && (proximidade == "Muito próximo" || proximidade == "Próximo" || proximidade == "Regular"))){
             return false;
         }
-        else if (!(event.getExclusividade() == "Evento Aberto" && (proximidade == "Próximos" || proximidade == "Regulares" || proximidade == "Distantes"))){
+        else if (!(event.getExclusividade() == "Evento Aberto" && (proximidade == "Próximo" || proximidade == "Regular" || proximidade == "Distante"))){
             return false;
         }
         return true;

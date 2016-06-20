@@ -31,6 +31,9 @@ public class TelaEvento {
 
 
     // FUNÇÕES DA “PROJEÇÃO DA TELA”
+    //Faz: contrutor que inicia todas os metodos que adicionam as palavras aos menus.
+    //Entrada: VOID
+    //Saida: VOID
     public TelaEvento() {
         gestorEventos = new GestorEventos();
         gestorContatos = new GestorContatos();
@@ -52,7 +55,9 @@ public class TelaEvento {
         iniciarMenuGerenciarConvidadosEvento();
     }
 
-
+    //Faz: metodos que adicionam as palavras aos menus.
+    //Entrada: VOID
+    //Saida: VOID
     private void iniciarMenuAgenda() {
         menu_agenda = new StringBuilder();
         menu_agenda.append("1 - Gerenciar Contato").append("\n");
@@ -164,7 +169,9 @@ public class TelaEvento {
 
 
 
-
+    //Faz: loops infinitos que são as opções nos menus.
+    //Entrada: VOID
+    //Saida: VOID
     void executar() {
         while (true) {
             switch (Integer.parseInt(mostrarMenuAgenda())) {
@@ -430,7 +437,9 @@ public class TelaEvento {
 
 
 
-
+    //Faz: responsavel por mostrar as opções/escritas dos menus.
+    //Entrada: VOID
+    //Saida: uma strig, contendo todas as opções pra determinando menu, que será exibida por meio de um "JOptionPane.showInputDialog"
     private String mostrarMenuAgenda() {
         return JOptionPane.showInputDialog(null, menu_agenda);
     }
@@ -489,74 +498,143 @@ public class TelaEvento {
 
 
     // FUNÇÕES DE “GERENCIAR CONTATOS”
+    //Faz: cria e adiciona um amigo a lista de contatos.
+    //Entrada: VOID
+    //Saida: VOID
     private void criarAmigo() {
         try {
+            StringBuilder proximidade = new StringBuilder();
             Amigo amigo = new Amigo();
             amigo.setNome(JOptionPane.showInputDialog("Nome"));
             amigo.setCelular(JOptionPane.showInputDialog("Celular"));
-            //amigo.setEmail(JOptionPane.showInputDialog("E-mail"));
-            //amigo.setNascimento(JOptionPane.showInputDialog("Nascimento"));
-            //amigo.setRua(JOptionPane.showInputDialog("Rua"));
-            //amigo.setNumero(JOptionPane.showInputDialog("Numero da casa"));
-            //amigo.setBairro(JOptionPane.showInputDialog("Bairro"));
-            //amigo.setCidade(JOptionPane.showInputDialog("Cidade"));
-            //amigo.setEstado(JOptionPane.showInputDialog("Estado"));
-            //amigo.setPais(JOptionPane.showInputDialog("País"));
-            //amigo.setGenero(JOptionPane.showInputDialog("Genero"));
-            //amigo.setProximidade(JOptionPane.showInputDialog("Proximidade"));
-            //amigo.setReferencia(JOptionPane.showInputDialog("Referencia"));
+            amigo.setEmail(JOptionPane.showInputDialog("E-mail"));
+            amigo.setNascimento(JOptionPane.showInputDialog("Nascimento"));
+            amigo.setRua(JOptionPane.showInputDialog("Rua"));
+            amigo.setNumero(JOptionPane.showInputDialog("Numero da casa"));
+            amigo.setBairro(JOptionPane.showInputDialog("Bairro"));
+            amigo.setCidade(JOptionPane.showInputDialog("Cidade"));
+            amigo.setEstado(JOptionPane.showInputDialog("Estado"));
+            amigo.setPais(JOptionPane.showInputDialog("País"));
+            amigo.setGenero(JOptionPane.showInputDialog("Genero"));
+            proximidade.append("Proximidade: ").append("\n");
+            proximidade.append("1 - ").append("Muito próximo").append("\n");
+            proximidade.append("2 - ").append("Próximo").append("\n");
+            proximidade.append("3 - ").append("Regular").append("\n");
+            proximidade.append("4 - ").append("Distante").append("\n");
+            switch (Integer.parseInt(JOptionPane.showInputDialog(proximidade.toString()))) {
+                case 1:
+                    amigo.setProximidade("Muito próximo");
+                    break;
+                case 2:
+                    amigo.setProximidade("Próximo");
+                    break;
+                case 3:
+                    amigo.setProximidade("Regular");
+                    break;
+                case 4:
+                    amigo.setProximidade("Distante");
+                    break;
+            }
+            amigo.setReferencia(JOptionPane.showInputDialog("Referencia"));
             gestorContatos.adicionaContato(amigo);
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, ex);
         }
     }
 
+    //Faz: cria e adiciona um colega a lista de contatos.
+    //Entrada: VOID
+    //Saida: VOID
     private void criarColega() {
         try {
-        Colega colega = new Colega();
-        colega.setNome(JOptionPane.showInputDialog("Nome"));
-        colega.setCelular(JOptionPane.showInputDialog("Celular"));
-        //colega.setEmail(JOptionPane.showInputDialog("E-mail"));
-        //colega.setNascimento(JOptionPane.showInputDialog("Nascimento"));
-        //colega.setRua(JOptionPane.showInputDialog("Rua"));
-        //colega.setNumero(JOptionPane.showInputDialog("Numero da casa"));
-        //colega.setBairro(JOptionPane.showInputDialog("Bairro"));
-        //colega.setCidade(JOptionPane.showInputDialog("Cidade"));
-        //colega.setEstado(JOptionPane.showInputDialog("Estado"));
-        //colega.setPais(JOptionPane.showInputDialog("País"));
-        //colega.setGenero(JOptionPane.showInputDialog("Genero"));
-        //colega.setProximidade(JOptionPane.showInputDialog("Proximidade"));
-        //colega.setReferencia(JOptionPane.showInputDialog("Referencia"));
-        //colega.setLocal_trabalho(JOptionPane.showInputDialog("Local de trabalho"));
-        //colega.setProfissao(JOptionPane.showInputDialog("Profissão"));
-        gestorContatos.adicionaContato(colega);
+            StringBuilder proximidade = new StringBuilder();
+            Colega colega = new Colega();
+            colega.setNome(JOptionPane.showInputDialog("Nome"));
+            colega.setCelular(JOptionPane.showInputDialog("Celular"));
+            colega.setEmail(JOptionPane.showInputDialog("E-mail"));
+            colega.setNascimento(JOptionPane.showInputDialog("Nascimento"));
+            colega.setRua(JOptionPane.showInputDialog("Rua"));
+            colega.setNumero(JOptionPane.showInputDialog("Numero da casa"));
+            colega.setBairro(JOptionPane.showInputDialog("Bairro"));
+            colega.setCidade(JOptionPane.showInputDialog("Cidade"));
+            colega.setEstado(JOptionPane.showInputDialog("Estado"));
+            colega.setPais(JOptionPane.showInputDialog("País"));
+            colega.setGenero(JOptionPane.showInputDialog("Genero"));
+            proximidade.append("Proximidade: ").append("\n");
+            proximidade.append("1 - ").append("Muito próximo").append("\n");
+            proximidade.append("2 - ").append("Próximo").append("\n");
+            proximidade.append("3 - ").append("Regular").append("\n");
+            proximidade.append("4 - ").append("Distante").append("\n");
+            switch (Integer.parseInt(JOptionPane.showInputDialog(proximidade.toString()))) {
+                case 1:
+                    colega.setProximidade("Muito próximo");
+                    break;
+                case 2:
+                    colega.setProximidade("Próximo");
+                    break;
+                case 3:
+                    colega.setProximidade("Regular");
+                    break;
+                case 4:
+                    colega.setProximidade("Distante");
+                    break;
+            }
+            colega.setReferencia(JOptionPane.showInputDialog("Referencia"));
+            colega.setLocal_trabalho(JOptionPane.showInputDialog("Local de trabalho"));
+            colega.setProfissao(JOptionPane.showInputDialog("Profissão"));
+            gestorContatos.adicionaContato(colega);
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, ex);
         }
     }
 
+    //Faz: cria e adiciona um familiar a lista de contatos.
+    //Entrada: VOID
+    //Saida: VOID
     private void criarFamiliar() {
         try {
-        Familiar familiar = new Familiar();
-        familiar.setNome(JOptionPane.showInputDialog("Nome"));
-        familiar.setCelular(JOptionPane.showInputDialog("Celular"));
-        //familiar.setEmail(JOptionPane.showInputDialog("E-mail"));
-        //familiar.setNascimento(JOptionPane.showInputDialog("Nascimento"));
-        //familiar.setRua(JOptionPane.showInputDialog("Rua"));
-        //familiar.setNumero(JOptionPane.showInputDialog("Numero da casa"));
-        //familiar.setBairro(JOptionPane.showInputDialog("Bairro"));
-        //familiar.setCidade(JOptionPane.showInputDialog("Cidade"));
-        //familiar.setEstado(JOptionPane.showInputDialog("Estado"));
-        //familiar.setPais(JOptionPane.showInputDialog("País"));
-        //familiar.setGenero(JOptionPane.showInputDialog("Genero"));
-        //familiar.setProximidade(JOptionPane.showInputDialog("Proximidade"));
-        //familiar.setParentesco(JOptionPane.showInputDialog("Parentesco"));
-        gestorContatos.adicionaContato(familiar);
+            StringBuilder proximidade = new StringBuilder();
+            Familiar familiar = new Familiar();
+            familiar.setNome(JOptionPane.showInputDialog("Nome"));
+            familiar.setCelular(JOptionPane.showInputDialog("Celular"));
+            familiar.setEmail(JOptionPane.showInputDialog("E-mail"));
+            familiar.setNascimento(JOptionPane.showInputDialog("Nascimento"));
+            familiar.setRua(JOptionPane.showInputDialog("Rua"));
+            familiar.setNumero(JOptionPane.showInputDialog("Numero da casa"));
+            familiar.setBairro(JOptionPane.showInputDialog("Bairro"));
+            familiar.setCidade(JOptionPane.showInputDialog("Cidade"));
+            familiar.setEstado(JOptionPane.showInputDialog("Estado"));
+            familiar.setPais(JOptionPane.showInputDialog("País"));
+            familiar.setGenero(JOptionPane.showInputDialog("Genero"));
+            proximidade.append("Proximidade: ").append("\n");
+            proximidade.append("1 - ").append("Muito próximo").append("\n");
+            proximidade.append("2 - ").append("Próximo").append("\n");
+            proximidade.append("3 - ").append("Regular").append("\n");
+            proximidade.append("4 - ").append("Distante").append("\n");
+            switch (Integer.parseInt(JOptionPane.showInputDialog(proximidade.toString()))) {
+                case 1:
+                    familiar.setProximidade("Muito próximo");
+                    break;
+                case 2:
+                    familiar.setProximidade("Próximo");
+                    break;
+                case 3:
+                    familiar.setProximidade("Regular");
+                    break;
+                case 4:
+                    familiar.setProximidade("Distante");
+                    break;
+            }
+            familiar.setParentesco(JOptionPane.showInputDialog("Parentesco"));
+            gestorContatos.adicionaContato(familiar);
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, ex);
         }
     }
 
+    //Faz: é exibido ao usuario uma lista de contatos, ele seleciona qual quer editar, apos isso ele redefine todos os dados do contato
+    //Entrada: VOID
+    //Saida: VOID
     public void editarContato() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta = gestorContatos.buscarIndice(--indice);
@@ -573,29 +651,92 @@ public class TelaEvento {
         }
     }
 
+    //Faz: é exibido ao usuario uma lista de contatos, ele seleciona qual quer excluir
+    //Entrada: VOID
+    //Saida: VOID
     private void excluirContato() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         gestorContatos.excluiContato(--indice);
     }
 
+    //Faz: mostra a string com os dados do contato
+    //Entrada: VOID
+    //Saida: VOID
     private void buscaConta() {
         JOptionPane.showMessageDialog(null, buscarContato());
     }
 
+    //Faz: usuario digita o nome do contato, os dados do contato são colocados em um String, e o metodo "buscaConta" imprime essa String
+    //Entrada: VOID
+    //Saida: String contendo os dados do contato
     private String buscarContato() {
         String nome;
         StringBuilder contato = new StringBuilder();
         Contato conta;
         nome = JOptionPane.showInputDialog("Nome contato");
         conta = gestorContatos.buscarNome(nome);
-        contato.append(conta.getNome()).append(" ").append(conta.getCelular()).append("\n");
+        if (conta instanceof Amigo){
+            Amigo amigo = (Amigo) conta;
+            contato.append("Nome: ").append(amigo.getNome()).append("\n");
+            contato.append("Celular: ").append(amigo.getCelular()).append("\n");
+            contato.append("E-mail: ").append(amigo.getEmail()).append("\n");
+            contato.append("Nascimento: ").append(amigo.getNascimento()).append("\n");
+            contato.append("Rua: ").append(amigo.getRua()).append("\n");
+            contato.append("Numero: ").append(amigo.getNumero()).append("\n");
+            contato.append("Bairro: ").append(amigo.getBairro()).append("\n");
+            contato.append("Cidade: ").append(amigo.getCidade()).append("\n");
+            contato.append("Estado: ").append(amigo.getEstado()).append("\n");
+            contato.append("Pais: ").append(amigo.getPais()).append("\n");
+            contato.append("Genero: ").append(amigo.getGenero()).append("\n");
+            contato.append("Proximidade: ").append(amigo.getProximidade()).append("\n");
+            contato.append("Referencia: ").append(amigo.getReferencia()).append("\n");
+        }
+        else if (conta instanceof Colega){
+            Colega colega = (Colega) conta;
+            contato.append("Nome: ").append(colega.getNome()).append("\n");
+            contato.append("Celular: ").append(colega.getCelular()).append("\n");
+            contato.append("E-maail: ").append(colega.getEmail()).append("\n");
+            contato.append("Nascimento: ").append(colega.getNascimento()).append("\n");
+            contato.append("Rua: ").append(colega.getRua()).append("\n");
+            contato.append("Numero: ").append(colega.getNumero()).append("\n");
+            contato.append("Bairro: ").append(colega.getBairro()).append("\n");
+            contato.append("Cidade: ").append(colega.getCidade()).append("\n");
+            contato.append("Estado: ").append(colega.getEstado()).append("\n");
+            contato.append("Pais: ").append(colega.getPais()).append("\n");
+            contato.append("Genero: ").append(colega.getGenero()).append("\n");
+            contato.append("Proximidade: ").append(colega.getReferencia()).append("\n");
+            contato.append("Local de trabalho: ").append(colega.getLocal_trabalho()).append("\n");
+            contato.append("Profissão: ").append(colega.getProfissao()).append("\n");
+        }
+        else if (conta instanceof Familiar){
+            Familiar familiar = (Familiar) conta;
+            contato.append("Nome: ").append(familiar.getNome()).append("\n");
+            contato.append("celular: ").append(familiar.getCelular()).append("\n");
+            contato.append("E-maail: ").append(familiar.getEmail()).append("\n");
+            contato.append("Nascimento: ").append(familiar.getNascimento()).append("\n");
+            contato.append("Rua: ").append(familiar.getRua()).append("\n");
+            contato.append("Numero: ").append(familiar.getNumero()).append("\n");
+            contato.append("Bairro: ").append(familiar.getBairro()).append("\n");
+            contato.append("Cidade: ").append(familiar.getCidade()).append("\n");
+            contato.append("Estado: ").append(familiar.getEstado()).append("\n");
+            contato.append("Pais: ").append(familiar.getPais()).append("\n");
+            contato.append("Genero: ").append(familiar.getGenero()).append("\n");
+            contato.append("Proximidade: ").append(familiar.getProximidade()).append("\n");
+            contato.append("Parentesco: ").append(familiar.getParentesco()).append("\n");
+        }
         return contato.toString();
     }
 
+    //Faz: mostra a String contendo todos os contatos cadastrados
+    //Entrada: VOID
+    //Saida: VOID
     private void listaConta() {
         JOptionPane.showMessageDialog(null, listarContato());
     }
 
+    //Faz: reune todos os contatos cadastrados, e coloca em uma Streing seus Nome e Celulares e passa para o metodo "listaConta"
+    //Entrada: VOID
+    //Saida: retorna uma String contendo os Nomes e Celulares de todos os contatos
     private String listarContato() {
         int cont = 0;
         StringBuilder contato = new StringBuilder();
@@ -605,6 +746,9 @@ public class TelaEvento {
         return contato.toString();
     }
 
+    //Faz: mostra uma lista contendo todos os contatos cadastrados e depois outra lista contendo os gostos, usuario seleciona um contato e depois um gosto
+    //Entrada: VOID
+    //Saida: VOID
     public void adicionarGostoAContato() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta = gestorContatos.buscarIndice(--indice);
@@ -613,6 +757,10 @@ public class TelaEvento {
     }
 
 
+    //Faz: mostra uma lista contendo todos os contatos cadastrados e depois mais uma lista contendo todos os contatos cadastrados,
+    //     usuario seleciona um contato e depois um outro contato e a relação é criada entre os dois
+    //Entrada: VOID
+    //Saida: VOID
     public void adicionarRelacaoAmigo() {
         int indice1 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta1 = gestorContatos.buscarIndice(--indice1);
@@ -622,6 +770,10 @@ public class TelaEvento {
         conta2.relacoes.adicionarAmigo(conta1);
     }
 
+    //Faz: mostra uma lista contendo todos os contatos cadastrados e depois mais uma lista contendo todos os contatos cadastrados,
+    //     usuario seleciona um contato e depois um outro contato e a relação é criada entre os dois
+    //Entrada: VOID
+    //Saida: VOID
     public void adicionarRelacaoColega() {
         int indice1 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta1 = gestorContatos.buscarIndice(--indice1);
@@ -631,6 +783,10 @@ public class TelaEvento {
         conta2.relacoes.adicionarColega(conta1);
     }
 
+    //Faz: mostra uma lista contendo todos os contatos cadastrados e depois mais uma lista contendo todos os contatos cadastrados,
+    //     usuario seleciona um contato e depois um outro contato e a relação é criada entre os dois
+    //Entrada: VOID
+    //Saida: VOID
     public void adicionarRelacaoFamiliar() {
         int indice1 = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta1 = gestorContatos.buscarIndice(--indice1);
@@ -640,6 +796,10 @@ public class TelaEvento {
         conta2.relacoes.adicionarFamiliar(conta1);
     }
 
+    //Faz: mostra uma lista contendo todos os contatos cadastrados e depois mais uma lista contendo todos os contatos cadastrados,
+    //     usuario seleciona um contato e depois um outro contato e a relação é desfeita entre os dois
+    //Entrada: VOID
+    //Saida: VOID
     public void excluirRelacaoAmigo() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta = gestorContatos.buscarIndice(--indice);
@@ -647,6 +807,10 @@ public class TelaEvento {
         conta.relacoes.excluirAmigo(gestorContatos.buscarNome(nome));
     }
 
+    //Faz: mostra uma lista contendo todos os contatos cadastrados e depois mais uma lista contendo todos os contatos cadastrados,
+    //     usuario seleciona um contato e depois um outro contato e a relação é desfeita entre os dois
+    //Entrada: VOID
+    //Saida: VOID
     public void excluirRelacaoColega() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta = gestorContatos.buscarIndice(--indice);
@@ -654,6 +818,10 @@ public class TelaEvento {
         conta.relacoes.excluirColega(gestorContatos.buscarNome(nome));
     }
 
+    //Faz: mostra uma lista contendo todos os contatos cadastrados e depois mais uma lista contendo todos os contatos cadastrados,
+    //     usuario seleciona um contato e depois um outro contato e a relação é desfeita entre os dois
+    //Entrada: VOID
+    //Saida: VOID
     public void excluirRelacaoFamiliar() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta = gestorContatos.buscarIndice(--indice);
@@ -661,18 +829,27 @@ public class TelaEvento {
         conta.relacoes.excluirFamiliar(gestorContatos.buscarNome(nome));
     }
 
-    public void listarRelacoesAmigos(){
+    //Faz: mostra uma lista contendo todos os contatos cadastrados o usuario seleciona o contato e depois uma lista contendo todos as relações
+    //Entrada: VOID
+    //Saida: VOID
+    public void listarRelacoesAmigos() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta = gestorContatos.buscarIndice(--indice);
         JOptionPane.showMessageDialog(null, conta.relacoes.listarRelacoesAmigos());
     }
 
-    public void listarRelacoesColegas(){
+    //Faz: mostra uma lista contendo todos os contatos cadastrados o usuario seleciona o contato e depois uma lista contendo todos as relações
+    //Entrada: VOID
+    //Saida: VOID
+    public void listarRelacoesColegas() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta = gestorContatos.buscarIndice(--indice);
         JOptionPane.showMessageDialog(null, conta.relacoes.listarRelacoesColegas());
     }
 
+    //Faz: mostra uma lista contendo todos os contatos cadastrados o usuario seleciona o contato e depois uma lista contendo todos as relações
+    //Entrada: VOID
+    //Saida: VOID
     public void listarRelacoesFamiliares(){
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         Contato conta = gestorContatos.buscarIndice(--indice);
@@ -680,12 +857,18 @@ public class TelaEvento {
     }
 
 
+    //Faz: cria e adiciona um gosto a lista de gosto.
+    //Entrada: VOID
+    //Saida: VOID
     public void adicionarGosto() {
         String nome_gosto;
         nome_gosto = JOptionPane.showInputDialog("Nome gosto");
         gestorContatos.gotos.adicionarGosto(nome_gosto);
     }
 
+    //Faz: cria e adiciona um tipo de evento de um gosto.
+    //Entrada: VOID
+    //Saida: VOID
     public void adicionarGostoTipoEvento() {
         String nome_gosto_tipo_evento;
         String nome_gosto;
@@ -694,12 +877,18 @@ public class TelaEvento {
         gestorContatos.gotos.adicionarGostoTipoEvento(nome_gosto, nome_gosto_tipo_evento);
     }
 
+    //Faz: exclui um gosto da lista de gosto.
+    //Entrada: VOID
+    //Saida: VOID
     public void excluirGosto() {
         String nome_gosto;
         nome_gosto = JOptionPane.showInputDialog("Nome gosto");
         gestorContatos.gotos.excluirGosto(nome_gosto);
     }
 
+    //Faz: exclui um tipo de evento de um gosto.
+    //Entrada: VOID
+    //Saida: VOID
     public void excluirGostoTipoEvento() {
         String nome_gosto_tipo_evento;
         String nome_gosto;
@@ -708,6 +897,9 @@ public class TelaEvento {
         gestorContatos.gotos.excluirGostoTipoEvento(nome_gosto, nome_gosto_tipo_evento);
     }
 
+    //Faz: lista os tipos de gostos e seus eventos.
+    //Entrada: VOID
+    //Saida: VOID
     public void listarGostosETiposEvento() {
         JOptionPane.showMessageDialog(null, gestorContatos.gotos.listarGostosETiposEvento());
     }
@@ -728,11 +920,11 @@ public class TelaEvento {
         Evento evento = new Evento();
         evento.setTitulo(JOptionPane.showInputDialog("Título do evento"));
         evento.setLocal(JOptionPane.showInputDialog("Local do evento"));
-        //evento.setEndereco(JOptionPane.showInputDialog("Endereço do evento"));
-        //evento.setData(JOptionPane.showInputDialog("Data do evento"));
-        //evento.setHora(JOptionPane.showInputDialog("Hora do evento"));
+        evento.setEndereco(JOptionPane.showInputDialog("Endereço do evento"));
+        evento.setData(JOptionPane.showInputDialog("Data do evento"));
+        evento.setHora(JOptionPane.showInputDialog("Hora do evento"));
         evento.setNumero_maximo(Integer.valueOf(JOptionPane.showInputDialog("Numero maximo de participantes")));
-        //evento.setValorEntrada(Integer.valueOf(JOptionPane.showInputDialog("Valor da entreada")));
+        evento.setValorEntrada(Integer.valueOf(JOptionPane.showInputDialog("Valor da entreada")));
         exclusividade.append("Exclusividade do evento: ").append("\n");
         exclusividade.append("1 - ").append("Evento Fechado").append("\n");
         exclusividade.append("2 - ").append("Evento Reservado").append("\n");
@@ -790,10 +982,17 @@ public class TelaEvento {
         String nome;
         StringBuilder evento = new StringBuilder();
         Evento even;
-        nome = (JOptionPane.showInputDialog("Nome evento"));
+        nome = (JOptionPane.showInputDialog("Titulo evento"));
         even = gestorEventos.buscarNome(nome);
-        evento.append(even.getTitulo()).append(" ").append(even.getData()).append("\n");
-
+        evento.append("Titulo: ").append(even.getTitulo()).append("\n");
+        evento.append("Local: ").append(even.getLocal()).append("\n");
+        evento.append("Endereco: ").append(even.getEndereco()).append("\n");
+        evento.append("Data: ").append(even.getData()).append("\n");
+        evento.append("Hora: ").append(even.getHora()).append("\n");
+        evento.append("Numero: ").append(even.getNumero_maximo()).append("\n");
+        evento.append("Entrada: ").append(even.getValorEntrada()).append("\n");
+        evento.append("Exclusividade: ").append(even.getExclusividade()).append("\n");
+        evento.append("Grupo evento: ").append(even.getGrupo_evento()).append("\n");
         return evento.toString();
     }
 
