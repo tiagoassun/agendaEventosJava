@@ -914,6 +914,9 @@ public class TelaEvento {
 
 
     // FUNÇÕES DE “CRIAR EVENTOS”
+    //Faz: cria e adiciona um evento a lista de eventos.
+    //Entrada: VOID
+    //Saida: VOID
     private void criarEvento() {
         StringBuilder exclusividade = new StringBuilder();
         StringBuilder grupo_evento = new StringBuilder();
@@ -962,6 +965,9 @@ public class TelaEvento {
         gestorEventos.adicionaEvento(evento);
     }
 
+    //Faz: é exibido ao usuario uma lista de eventos, ele seleciona qual quer editar, apos isso ele redefine todos os dados do evento
+    //Entrada: VOID
+    //Saida: VOID
     public void editarEvento() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarEvento()));
         Evento evento = gestorEventos.buscarIndice(--indice);
@@ -969,15 +975,24 @@ public class TelaEvento {
         criarEvento();
     }
 
+    //Faz: é exibido ao usuario uma lista de eventos, ele seleciona qual quer excluir
+    //Entrada: VOID
+    //Saida: VOID
     private void excluirEvento() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(listarEvento()));
         gestorEventos.excluiEvento(--indice);
     }
 
+    //Faz: mostra a string com os dados do evento
+    //Entrada: VOID
+    //Saida: VOID
     private void buscaEvent() {
         JOptionPane.showMessageDialog(null, buscarEvento());
     }
 
+    //Faz: usuario digita o nome do evento, os dados do evento são colocados em um String, e o metodo "buscaConta" imprime essa String
+    //Entrada: VOID
+    //Saida: String contendo os dados do evento
     private String buscarEvento() {
         String nome;
         StringBuilder evento = new StringBuilder();
@@ -996,10 +1011,16 @@ public class TelaEvento {
         return evento.toString();
     }
 
+    //Faz: mostra a String contendo todos os eventos cadastrados
+    //Entrada: VOID
+    //Saida: VOID
     private void listaEvent() {
         JOptionPane.showMessageDialog(null, listarEvento());
     }
 
+    //Faz: reune todos os eventos cadastrados, e coloca em uma Streing seus Titulos e Datas e passa para o metodo "listaEvent"
+    //Entrada: VOID
+    //Saida: retorna uma String contendo os Titulos e Datas de todos os eventos
     private String listarEvento() {
         int cont = 0;
         StringBuilder listaE = new StringBuilder();
@@ -1010,33 +1031,54 @@ public class TelaEvento {
     }
 
 
+    //Faz: Adiciona um tipo de Evento a lista de eventos sociais
+    //Entrada: VOID
+    //Saida: VOID
     private void adicionarTipoEventoSocial() {
         gestorEventos.grupoEvento.adicionarTipoEventoSocial(JOptionPane.showInputDialog(gestorEventos.grupoEvento.listarTipoEventosSocial()));
     }
 
+    //Faz: Adiciona um tipo de Evento a lista de eventos profissionais
+    //Entrada: VOID
+    //Saida: VOID
     private void adicionarTipoEventoProfissional() {
         gestorEventos.grupoEvento.adicionarTipoEventoProfissional(JOptionPane.showInputDialog(gestorEventos.grupoEvento.listarTipoEventosProfissional()));
     }
 
+    //Faz: Adiciona um tipo de Evento a lista de eventos familiar
+    //Entrada: VOID
+    //Saida: VOID
     private void adicionarTipoEventoFamiliar() {
         gestorEventos.grupoEvento.adicionarTipoEventoFamiliar(JOptionPane.showInputDialog(gestorEventos.grupoEvento.listarTipoEventosFamiliar()));
     }
 
+    //Faz: Excluir um tipo de Evento a lista de eventos social
+    //Entrada: VOID
+    //Saida: VOID
     private void excluirTipoEventoSocial() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(gestorEventos.grupoEvento.listarTipoEventosSocial()));
         gestorEventos.grupoEvento.excluirTipoEventoSocial(--indice);
     }
 
+    //Faz: Excluir um tipo de Evento a lista de eventos profissional
+    //Entrada: VOID
+    //Saida: VOID
     private void excluirTipoEventoProfissional() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(gestorEventos.grupoEvento.listarTipoEventosProfissional()));
         gestorEventos.grupoEvento.excluirTipoEventoProfissional(--indice);
     }
 
+    //Faz: Excluir um tipo de Evento a lista de eventos familiar
+    //Entrada: VOID
+    //Saida: VOID
     private void excluirTipoEventoFamiliar() {
         int indice = Integer.valueOf(JOptionPane.showInputDialog(gestorEventos.grupoEvento.listarTipoEventosFamiliar()));
         gestorEventos.grupoEvento.excluirTipoEventoFamiliar(--indice);
     }
 
+    //Faz: Listar um tipo de Evento a lista de eventos
+    //Entrada: VOID
+    //Saida: VOID
     private void listarTipoEventos() {
         String list_event;
         list_event = gestorEventos.grupoEvento.listarTipoEventosSocial();
@@ -1055,18 +1097,27 @@ public class TelaEvento {
 
 
     // FUNÇÕES DE “GERENCIAR CONVIDADOS EVENTO”
+    //Faz: mostra um lista de eventos e depois uma lista de contatos, o usuario seleciona quaal evento e qual contato sera adicionado
+    //Entrada: VOID
+    //Saida: VOID
     public void addConvidadoIndividualmente() {
         int indiceEvento = Integer.valueOf(JOptionPane.showInputDialog(listarEvento()));
         int indiceContato = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         gestorEventos.buscarIndice(--indiceEvento).adicionaParticipante(gestorContatos.buscarIndice(--indiceContato));
     }
 
+    //Faz: mostra um lista de eventos e depois uma lista de contatos, o usuario seleciona quaal evento e qual contato sera excluido
+    //Entrada: VOID
+    //Saida: VOID
     public void removerConvidado() {
         int indiceEvento = Integer.valueOf(JOptionPane.showInputDialog(listarEvento()));
         int indiceContato = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
         gestorEventos.buscarIndice(--indiceEvento).excluiParticipante(gestorContatos.buscarIndice(--indiceContato));
     }
 
+    //Faz: usuario seleciona um evento na lista de eventos q é mostrada, e depois é mostrado uma lista dos convidados do evento
+    //Entrada: VOID
+    //Saida: VOID
     public void listarConvidadosDoEvento() {
         int cont = 0;
         StringBuilder contato = new StringBuilder();
@@ -1077,6 +1128,9 @@ public class TelaEvento {
         JOptionPane.showMessageDialog(null, contato.toString());
     }
 
+    //Faz: seleciona um em evento e depois busca pelo nome um contato em especifico
+    //Entrada: VOID
+    //Saida: VOID
     public void listarContatoEmEvento() {
         String nome;
         int cont = 0;
@@ -1088,6 +1142,9 @@ public class TelaEvento {
         JOptionPane.showMessageDialog(null, contato.toString());
     }
 
+    //Faz: seleciona um contato e depois é listado todos os eventos em que o contato se encontra
+    //Entrada: VOID
+    //Saida: VOID
     public void listarEventosDoContato() {
         int cont = 0;
         String nome;
