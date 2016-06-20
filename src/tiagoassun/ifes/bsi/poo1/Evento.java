@@ -1,7 +1,10 @@
 package tiagoassun.ifes.bsi.poo1;
 
+import javax.swing.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class Evento {
@@ -16,6 +19,7 @@ public class Evento {
     private float valorEntrada;
     private String exclusividade;
 
+    private Map<String, ArrayList<String>> grupo_evento = new HashMap<String, ArrayList<String>>(); //<Nome, Lista tipos eventos>
 
 
 
@@ -92,7 +96,24 @@ public class Evento {
     }
 
     public void adicionaParticipante(Contato c) {
-        contatos.add(c);
+        int cont = 0;
+        if (contatos.size() < numero_maximo) {
+            for (Contato conta : contatos) {
+                if (conta == c) {
+                    cont++;
+                }
+            }
+            if (cont == 0){
+                contatos.add(c);
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "ERRO! Esse contato já está no evento.");
+            }
+
+        }
+        else {
+            JOptionPane.showMessageDialog(null, "ERRO! O evento chagou ao numero maximo de participantes.");
+        }
     }
 
     public void excluiParticipante(Contato c) {
@@ -106,5 +127,13 @@ public class Evento {
                 return c;
         }
         return null;
+    }
+
+    public Map<String, ArrayList<String>> getGrupo_evento() {
+        return grupo_evento;
+    }
+
+    public void setGrupo_evento(Map<String, ArrayList<String>> grupo_evento) {
+        this.grupo_evento = grupo_evento;
     }
 }

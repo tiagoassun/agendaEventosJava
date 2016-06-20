@@ -122,8 +122,53 @@ public class Contato implements Autenticar{
         this.proximidade = proximidade;
     }
 
+    public boolean heAmigo(Contato conta) {
+        if (conta instanceof Amigo){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean heFamiliar(Contato conta) {
+        if (conta instanceof Colega){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean heColega(Contato conta) {
+        if (conta instanceof Familiar){
+            return true;
+        }
+        return false;
+    }
+
     @Override
     public boolean autentica(Evento event) {
-        return false;
+        for (String grupo_event : event.getGrupo_evento().keySet()) {
+            if (!(grupo_event == "Evento Social" && this instanceof Amigo)) {
+                return false;
+            }
+            else if (!(grupo_event == "Evento Profissional" && (this instanceof Amigo || this instanceof Colega))) {
+                return false;
+            }
+            else if (!(grupo_event == "Evento Profissional" && (this instanceof Familiar || (this instanceof Amigo && proximidade == "Muito próximos")))) {
+                return false;
+            }
+        }
+
+        if (!(event.getExclusividade() == "Evento Fechado" && proximidade == "Muito próximos")){
+            return false;
+        }
+        else if (!(event.getExclusividade() == "Evento Reservado" && (proximidade == "Muito próximos" || proximidade == "Próximos"))){
+            return false;
+        }
+        else if (!(event.getExclusividade() == "Evento Regular" && (proximidade == "Muito próximos" || proximidade == "Próximos" || proximidade == "Regulares"))){
+            return false;
+        }
+        else if (!(event.getExclusividade() == "Evento Aberto" && (proximidade == "Próximos" || proximidade == "Regulares" || proximidade == "Distantes"))){
+            return false;
+        }
+        return true;
     }
 }

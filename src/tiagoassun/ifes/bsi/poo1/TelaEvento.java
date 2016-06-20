@@ -490,24 +490,29 @@ public class TelaEvento {
 
     // FUNÇÕES DE “GERENCIAR CONTATOS”
     private void criarAmigo() {
-        Amigo amigo = new Amigo();
-        amigo.setNome(JOptionPane.showInputDialog("Nome"));
-        amigo.setCelular(JOptionPane.showInputDialog("Celular"));
-        //amigo.setEmail(JOptionPane.showInputDialog("E-mail"));
-        //amigo.setNascimento(JOptionPane.showInputDialog("Nascimento"));
-        //amigo.setRua(JOptionPane.showInputDialog("Rua"));
-        //amigo.setNumero(JOptionPane.showInputDialog("Numero da casa"));
-        //amigo.setBairro(JOptionPane.showInputDialog("Bairro"));
-        //amigo.setCidade(JOptionPane.showInputDialog("Cidade"));
-        //amigo.setEstado(JOptionPane.showInputDialog("Estado"));
-        //amigo.setPais(JOptionPane.showInputDialog("País"));
-        //amigo.setGenero(JOptionPane.showInputDialog("Genero"));
-        //amigo.setProximidade(JOptionPane.showInputDialog("Proximidade"));
-        //amigo.setReferencia(JOptionPane.showInputDialog("Referencia"));
-        gestorContatos.adicionaContato(amigo);
+        try {
+            Amigo amigo = new Amigo();
+            amigo.setNome(JOptionPane.showInputDialog("Nome"));
+            amigo.setCelular(JOptionPane.showInputDialog("Celular"));
+            //amigo.setEmail(JOptionPane.showInputDialog("E-mail"));
+            //amigo.setNascimento(JOptionPane.showInputDialog("Nascimento"));
+            //amigo.setRua(JOptionPane.showInputDialog("Rua"));
+            //amigo.setNumero(JOptionPane.showInputDialog("Numero da casa"));
+            //amigo.setBairro(JOptionPane.showInputDialog("Bairro"));
+            //amigo.setCidade(JOptionPane.showInputDialog("Cidade"));
+            //amigo.setEstado(JOptionPane.showInputDialog("Estado"));
+            //amigo.setPais(JOptionPane.showInputDialog("País"));
+            //amigo.setGenero(JOptionPane.showInputDialog("Genero"));
+            //amigo.setProximidade(JOptionPane.showInputDialog("Proximidade"));
+            //amigo.setReferencia(JOptionPane.showInputDialog("Referencia"));
+            gestorContatos.adicionaContato(amigo);
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null, ex);
+        }
     }
 
     private void criarColega() {
+        try {
         Colega colega = new Colega();
         colega.setNome(JOptionPane.showInputDialog("Nome"));
         colega.setCelular(JOptionPane.showInputDialog("Celular"));
@@ -525,9 +530,13 @@ public class TelaEvento {
         //colega.setLocal_trabalho(JOptionPane.showInputDialog("Local de trabalho"));
         //colega.setProfissao(JOptionPane.showInputDialog("Profissão"));
         gestorContatos.adicionaContato(colega);
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null, ex);
+        }
     }
 
     private void criarFamiliar() {
+        try {
         Familiar familiar = new Familiar();
         familiar.setNome(JOptionPane.showInputDialog("Nome"));
         familiar.setCelular(JOptionPane.showInputDialog("Celular"));
@@ -543,6 +552,9 @@ public class TelaEvento {
         //familiar.setProximidade(JOptionPane.showInputDialog("Proximidade"));
         //familiar.setParentesco(JOptionPane.showInputDialog("Parentesco"));
         gestorContatos.adicionaContato(familiar);
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null, ex);
+        }
     }
 
     public void editarContato() {
@@ -716,11 +728,11 @@ public class TelaEvento {
         Evento evento = new Evento();
         evento.setTitulo(JOptionPane.showInputDialog("Título do evento"));
         evento.setLocal(JOptionPane.showInputDialog("Local do evento"));
-        evento.setEndereco(JOptionPane.showInputDialog("Endereço do evento"));
-        evento.setData(JOptionPane.showInputDialog("Data do evento"));
-        evento.setHora(JOptionPane.showInputDialog("Hora do evento"));
+        //evento.setEndereco(JOptionPane.showInputDialog("Endereço do evento"));
+        //evento.setData(JOptionPane.showInputDialog("Data do evento"));
+        //evento.setHora(JOptionPane.showInputDialog("Hora do evento"));
         evento.setNumero_maximo(Integer.valueOf(JOptionPane.showInputDialog("Numero maximo de participantes")));
-        evento.setValorEntrada(Integer.valueOf(JOptionPane.showInputDialog("Valor da entreada")));
+        //evento.setValorEntrada(Integer.valueOf(JOptionPane.showInputDialog("Valor da entreada")));
         exclusividade.append("Exclusividade do evento: ").append("\n");
         exclusividade.append("1 - ").append("Evento Fechado").append("\n");
         exclusividade.append("2 - ").append("Evento Reservado").append("\n");
@@ -744,7 +756,7 @@ public class TelaEvento {
         grupo_evento.append("1 - ").append("Evento Social").append("\n");
         grupo_evento.append("2 - ").append("Evento Profissional").append("\n");
         grupo_evento.append("3 - ").append("Evento Familiar").append("\n");
-        switch (Integer.parseInt(JOptionPane.showInputDialog(exclusividade.toString()))) {
+        switch (Integer.parseInt(JOptionPane.showInputDialog(grupo_evento.toString()))) {
             case 1:
                 evento.setGrupo_evento(gestorEventos.grupoEvento.getMap_evento_social());
                 break;
@@ -847,12 +859,7 @@ public class TelaEvento {
     public void addConvidadoIndividualmente() {
         int indiceEvento = Integer.valueOf(JOptionPane.showInputDialog(listarEvento()));
         int indiceContato = Integer.valueOf(JOptionPane.showInputDialog(listarContato()));
-        if(gestorEventos.validarRegras(gestorContatos.buscarIndice(--indiceContato), gestorEventos.buscarIndice(--indiceEvento))){
-            gestorEventos.buscarIndice(--indiceEvento).adicionaParticipante(gestorContatos.buscarIndice(--indiceContato));
-        }
-        else{
-            JOptionPane.showMessageDialog(null, "ERRO! Não foi possivel add o contato.");
-        }
+        gestorEventos.buscarIndice(--indiceEvento).adicionaParticipante(gestorContatos.buscarIndice(--indiceContato));
     }
 
     public void removerConvidado() {

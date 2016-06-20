@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0724e5f5-db39-4321-9f69-142dda77fc94" name="Default" comment="">
+    <list default="true" id="b2cc0697-2028-45bd-b7c0-fa2007d3320f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/agendaEventosJava/tiagoassun/ifes/bsi/poo1/GestorContatos.class" afterPath="$PROJECT_DIR$/out/production/agendaEventosJava/tiagoassun/ifes/bsi/poo1/GestorContatos.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/agendaEventosJava/tiagoassun/ifes/bsi/poo1/GestorEventos.class" afterPath="$PROJECT_DIR$/out/production/agendaEventosJava/tiagoassun/ifes/bsi/poo1/GestorEventos.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/agendaEventosJava/tiagoassun/ifes/bsi/poo1/TelaEvento.class" afterPath="$PROJECT_DIR$/out/production/agendaEventosJava/tiagoassun/ifes/bsi/poo1/TelaEvento.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contato.java" afterPath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contato.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Evento.java" afterPath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Evento.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java" afterPath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java" afterPath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java" afterPath="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java" />
     </list>
     <ignored path="agendaEventosJava.iws" />
@@ -29,106 +40,56 @@
       <file leaf-file-name="TelaEvento.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1055">
-              <caret line="316" column="45" selection-start-line="316" selection-start-column="45" selection-end-line="316" selection-end-column="45" />
+            <state relative-caret-position="1388">
+              <caret line="431" column="0" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#TelaEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#iniciarMenuAgenda#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#iniciarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#iniciarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#iniciarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#iniciarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#iniciarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#iniciarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#iniciarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#iniciarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#iniciarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#executar#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#executarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#executarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#executarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#mostrarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
+                <element signature="method#mostrarSubMenuGerenciarGruposEvento#0;class#TelaEvento#0" expanded="false" />
                 <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#criarAmigo#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#criarColega#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#criarFamiliar#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#editarContato#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#excluirContato#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#buscarContato#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#listarContato#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#adicionarRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#adicionarRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#adicionarRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#buscarEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#listarEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#addConvidadoIndividualmente#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#removerConvidado#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#listarConvidadosDoEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#listarContatoEmEvento#0;class#TelaEvento#0" expanded="false" />
-                <element signature="method#listarEventosDoContato#0;class#TelaEvento#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Relacao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Relacao.java">
+      <file leaf-file-name="GestorContatos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="95" column="4" selection-start-line="94" selection-start-column="0" selection-end-line="100" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="306">
+              <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+              <folding>
+                <element signature="method#excluiContatoNome#0;class#GestorContatos#0" expanded="false" />
+                <element signature="method#buscarNome#0;class#GestorContatos#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gostos.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Gostos.java">
+      <file leaf-file-name="Evento.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Evento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+            <state relative-caret-position="2006">
+              <caret line="118" column="47" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
               <folding>
-                <element signature="e#226#253#0" expanded="true" />
-                <element signature="method#adicionarGosto#0;class#Gostos#0" expanded="false" />
-                <element signature="e#411#419#0" expanded="true" />
-                <element signature="method#adicionarGostoTipoEvento#0;class#Gostos#0" expanded="false" />
-                <element signature="method#excluirGostoTipoEvento#0;class#Gostos#0" expanded="false" />
-                <element signature="method#existeGosto#0;class#Gostos#0" expanded="false" />
-                <element signature="method#existeGostoTipoEvento#0;class#Gostos#0" expanded="false" />
-                <element signature="method#listarGostosETiposEvento#0;class#Gostos#0" expanded="false" />
+                <element signature="method#buscarNome#0;class#Evento#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Contato.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contato.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1309">
+              <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2753#2754#0" expanded="false" />
+                <element signature="e#4100#4101#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="Interface" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,19 +103,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Main.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contatos.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GrupoEvento.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Eventos.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Autenticar.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Amigo.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Colega.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Familiar.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contato.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Relacao.java" />
-        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java" />
         <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Gostos.java" />
+        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Familiar.java" />
+        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Colega.java" />
+        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Amigo.java" />
+        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Evento.java" />
+        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java" />
+        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contato.java" />
+        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java" />
+        <option value="$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java" />
       </list>
     </option>
   </component>
@@ -164,34 +121,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Android</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -200,7 +134,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -218,9 +152,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -259,14 +191,15 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="E:/Test" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
+    <property name="last_opened_file_path" value="D:/../mygit/agendaEventosJava" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -585,6 +518,36 @@
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -682,6 +645,21 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
     </list>
@@ -704,150 +682,63 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0724e5f5-db39-4321-9f69-142dda77fc94" name="Default" comment="" />
-      <created>1465857766459</created>
+      <changelist id="b2cc0697-2028-45bd-b7c0-fa2007d3320f" name="Default" comment="" />
+      <created>1466370323292</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1465857766459</updated>
-      <workItem from="1465857776682" duration="347000" />
-      <workItem from="1465927612964" duration="53000" />
-      <workItem from="1465933077007" duration="5412000" />
-      <workItem from="1465940414683" duration="10244000" />
-      <workItem from="1466016537877" duration="4718000" />
-      <workItem from="1466081156177" duration="11589000" />
-      <workItem from="1466103779100" duration="13094000" />
-      <workItem from="1466198070306" duration="2356000" />
-      <workItem from="1466200723321" duration="187000" />
-      <workItem from="1466201220969" duration="5919000" />
-      <workItem from="1466208889057" duration="5454000" />
-      <workItem from="1466251258246" duration="19446000" />
+      <updated>1466370323292</updated>
+      <workItem from="1466370329764" duration="20000" />
+      <workItem from="1466370402936" duration="39000" />
+      <workItem from="1466370593230" duration="3446000" />
+      <workItem from="1466421809259" duration="118000" />
+      <workItem from="1466421993523" duration="9987000" />
+      <workItem from="1466435871889" duration="32000" />
+      <workItem from="1466437131069" duration="15000" />
     </task>
-    <task id="LOCAL-00001" summary="CRUD de Contatos e Eventos quase pronto, faltando o 'alterar' em ambos.">
-      <created>1466017645583</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1466017645583</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Classes Gostos, GruposEvento e Relacao estão prontas.">
-      <created>1466094045170</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1466094045170</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Classes Gostos, GruposEvento e Relacao estão prontas.">
-      <created>1466094070965</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1466094070965</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Classes Gostos, GruposEvento e Relacao estão prontas.">
-      <created>1466094076825</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1466094076825</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Alterações esteticas no codigo, nada relacionado a funcionalidades do progrema.">
-      <created>1466095547704</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1466095547704</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Todos os CRUD's em funcinamento, porem sem tratamento de erros. Faltando configurar as Regras de eventos.">
-      <created>1466121603755</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1466121603755</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Faltando fazer metodo de add Gostos e Regras.">
-      <created>1466214292402</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1466214292403</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Excluir relação e listar relação feitos, faltando fazer metodo de add Gostos e Regras.">
-      <created>1466259349269</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1466259349269</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Faltando listar gosto e tipos de eventos dos gostos e fazer metodo de validar Regras.">
-      <created>1466277947190</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1466277947190</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78819000" />
+    <option name="totallyTimeSpent" value="13657000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33802816" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1337953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33802816" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1337953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -860,19 +751,9 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="CRUD de Contatos e Eventos quase pronto, faltando o 'alterar' em ambos." />
-    <MESSAGE value="Classes Gostos, GruposEvento e Relacao estão prontas." />
-    <MESSAGE value="Alterações esteticas no codigo, nada relacionado a funcionalidades do progrema." />
-    <MESSAGE value="Todos os CRUD's em funcinamento, porem sem tratamento de erros. Faltando configurar as Regras de eventos." />
-    <MESSAGE value="Faltando fazer metodo de add Gostos e Regras." />
-    <MESSAGE value="Excluir relação e listar relação feitos, faltando fazer metodo de add Gostos e Regras." />
-    <MESSAGE value="Faltando listar gosto e tipos de eventos dos gostos e fazer metodo de validar Regras." />
-    <option name="LAST_COMMIT_MESSAGE" value="Faltando listar gosto e tipos de eventos dos gostos e fazer metodo de validar Regras." />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="46" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -881,440 +762,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Colega.java">
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#767#768#0" expanded="false" />
-            <element signature="e#795#796#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Familiar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding>
-            <element signature="e#354#355#0" expanded="false" />
-            <element signature="e#382#383#0" expanded="false" />
+            <element signature="method#mostrarSubMenuGerenciarGruposEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="27" />
+        <state relative-caret-position="340">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1053#1054#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Evento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#buscarNome#0;class#Evento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="53" column="65" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#excluiEventoNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="e#1082#1083#0" expanded="false" />
-            <element signature="e#1121#1122#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4114">
-          <caret line="254" column="39" selection-start-line="254" selection-start-column="39" selection-end-line="254" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TelaEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuAgenda#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#addConvidadoIndividualmente#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#removerConvidado#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarConvidadosDoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContatoEmEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEventosDoContato#0;class#TelaEvento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1053#1054#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Evento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#buscarNome#0;class#Evento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#excluiEventoNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="e#1082#1083#0" expanded="false" />
-            <element signature="e#1121#1122#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TelaEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuAgenda#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#addConvidadoIndividualmente#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#removerConvidado#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarConvidadosDoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContatoEmEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEventosDoContato#0;class#TelaEvento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#excluiEventoNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="e#1082#1083#0" expanded="false" />
-            <element signature="e#1121#1122#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Evento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="99" column="46" selection-start-line="99" selection-start-column="46" selection-end-line="99" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#buscarNome#0;class#Evento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contato.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-          <folding>
-            <element signature="e#142#143#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TelaEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuAgenda#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#addConvidadoIndividualmente#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#removerConvidado#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarConvidadosDoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContatoEmEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEventosDoContato#0;class#TelaEvento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contato.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Evento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#buscarNome#0;class#Evento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#142#143#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TelaEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuAgenda#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#addConvidadoIndividualmente#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#removerConvidado#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarConvidadosDoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContatoEmEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEventosDoContato#0;class#TelaEvento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#excluiEventoNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="e#1082#1083#0" expanded="false" />
-            <element signature="e#1121#1122#0" expanded="false" />
+            <element signature="method#excluiContatoNome#0;class#GestorContatos#0" expanded="false" />
+            <element signature="method#buscarNome#0;class#GestorContatos#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1322,119 +787,8 @@
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Evento.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
-          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <caret line="97" column="49" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#buscarNome#0;class#Evento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1053#1054#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding>
-            <element signature="e#142#143#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3077">
-          <caret line="189" column="5" selection-start-line="189" selection-start-column="5" selection-end-line="189" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TelaEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuAgenda#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#addConvidadoIndividualmente#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#removerConvidado#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarConvidadosDoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContatoEmEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEventosDoContato#0;class#TelaEvento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#excluiEventoNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="e#1082#1083#0" expanded="false" />
-            <element signature="e#1121#1122#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Evento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#buscarNome#0;class#Evento#0" expanded="false" />
           </folding>
         </state>
@@ -1442,444 +796,161 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contato.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="2057">
+          <caret line="171" column="20" selection-start-line="171" selection-start-column="20" selection-end-line="171" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding>
-            <element signature="e#142#143#0" expanded="false" />
+            <element signature="e#2753#2754#0" expanded="false" />
+            <element signature="e#4100#4101#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6409">
+          <caret line="379" column="26" selection-start-line="379" selection-start-column="26" selection-end-line="379" selection-end-column="26" />
+          <folding>
+            <element signature="method#mostrarSubMenuGerenciarGruposEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GrupoEvento.java" />
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TelaEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuAgenda#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#addConvidadoIndividualmente#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#removerConvidado#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarConvidadosDoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContatoEmEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEventosDoContato#0;class#TelaEvento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="method#GestorEventos#0;class#GestorEventos#0" expanded="false" />
             <element signature="method#excluiEventoNome#0;class#GestorEventos#0" expanded="false" />
             <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="e#1082#1083#0" expanded="false" />
-            <element signature="e#1121#1122#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Evento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#buscarNome#0;class#Evento#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contato.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2753#2754#0" expanded="false" />
+            <element signature="e#4100#4101#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding>
-            <element signature="e#142#143#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Gostos.java" />
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TelaEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuAgenda#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
+            <element signature="method#mostrarSubMenuGerenciarGruposEvento#0;class#TelaEvento#0" expanded="false" />
             <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#addConvidadoIndividualmente#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#removerConvidado#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarConvidadosDoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContatoEmEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEventosDoContato#0;class#TelaEvento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#excluiEventoNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="e#1082#1083#0" expanded="false" />
-            <element signature="e#1121#1122#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Evento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#buscarNome#0;class#Evento#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contato.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2753#2754#0" expanded="false" />
+            <element signature="e#4100#4101#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/util/ArrayList.java">
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Gostos.java" />
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="652" column="0" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#99#100#0" expanded="true" />
+            <element signature="e#142#143#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Autenticar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java">
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="24" />
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1013#1014#0" expanded="false" />
-            <element signature="e#1053#1054#0" expanded="false" />
+            <element signature="e#99#100#0" expanded="true" />
+            <element signature="e#142#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Familiar.java" />
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Colega.java" />
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Autenticar.java" />
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Amigo.java" />
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Relacao.java" />
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Gostos.java" />
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GrupoEvento.java" />
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+          <folding>
+            <element signature="method#GestorEventos#0;class#GestorEventos#0" expanded="false" />
+            <element signature="method#excluiEventoNome#0;class#GestorEventos#0" expanded="false" />
+            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1388">
+          <caret line="431" column="0" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
+          <folding>
+            <element signature="method#mostrarSubMenuGerenciarGruposEvento#0;class#TelaEvento#0" expanded="false" />
+            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorContatos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+          <folding>
+            <element signature="method#excluiContatoNome#0;class#GestorContatos#0" expanded="false" />
+            <element signature="method#buscarNome#0;class#GestorContatos#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Evento.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+        <state relative-caret-position="2006">
+          <caret line="118" column="47" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#buscarNome#0;class#Evento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GrupoEvento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/GestorEventos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#excluiEventoNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="method#buscarNome#0;class#GestorEventos#0" expanded="false" />
-            <element signature="e#1082#1083#0" expanded="false" />
-            <element signature="e#1121#1122#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Amigo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding>
-            <element signature="e#351#352#0" expanded="false" />
-            <element signature="e#379#380#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Colega.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#767#768#0" expanded="false" />
-            <element signature="e#795#796#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Familiar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding>
-            <element signature="e#354#355#0" expanded="false" />
-            <element signature="e#382#383#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#142#143#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Contato.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        <state relative-caret-position="1309">
+          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2753#2754#0" expanded="false" />
+            <element signature="e#4100#4101#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Gostos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
-          <folding>
-            <element signature="e#226#253#0" expanded="true" />
-            <element signature="method#adicionarGosto#0;class#Gostos#0" expanded="false" />
-            <element signature="e#411#419#0" expanded="true" />
-            <element signature="method#adicionarGostoTipoEvento#0;class#Gostos#0" expanded="false" />
-            <element signature="method#excluirGostoTipoEvento#0;class#Gostos#0" expanded="false" />
-            <element signature="method#existeGosto#0;class#Gostos#0" expanded="false" />
-            <element signature="method#existeGostoTipoEvento#0;class#Gostos#0" expanded="false" />
-            <element signature="method#listarGostosETiposEvento#0;class#Gostos#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/Relacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="95" column="4" selection-start-line="94" selection-start-column="0" selection-end-line="100" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tiagoassun/ifes/bsi/poo1/TelaEvento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1055">
-          <caret line="316" column="45" selection-start-line="316" selection-start-column="45" selection-end-line="316" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TelaEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuAgenda#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#iniciarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarContatos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuCriarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuExcluirRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarSubMenuListarRelacao#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuCriarEventos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#executarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarRelacoes#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarSubMenuGerenciarGostos#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#mostrarMenuGerenciarConvidadosEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContato#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoAmigo#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoColega#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirRelacaoFamiliar#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesColegas#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarRelacoesFamiliares#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#adicionarGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGosto#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirGostoTipoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarGostosETiposEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#criarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#editarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#excluirEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#buscarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#addConvidadoIndividualmente#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#removerConvidado#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarConvidadosDoEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarContatoEmEvento#0;class#TelaEvento#0" expanded="false" />
-            <element signature="method#listarEventosDoContato#0;class#TelaEvento#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

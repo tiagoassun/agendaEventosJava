@@ -8,12 +8,14 @@ import java.util.List;
 public class GestorEventos {
 
     private ArrayList<Evento> eventos;
+    public GrupoEvento grupoEvento;
 
 
 
 
     public GestorEventos() {
         eventos = new ArrayList<>();
+        grupoEvento = new GrupoEvento();
     }
 
     public List<Evento> getEventos() {
@@ -52,7 +54,7 @@ public class GestorEventos {
     }
 
     public boolean validarRegras(Autenticar conta, Evento event) {
-        boolean result = false;
+        boolean result;
         result =  conta.autentica(event);
         return result;
     }
