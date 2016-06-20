@@ -30,6 +30,9 @@ public class GestorEventos {
         eventos.remove(pos);
     }
 
+    //Faz: pega evento por evento na lista de eventos e compara o nome de cada um com a String recebida por parametro, se for igual remove o evento
+    //Entrada: String contendo o nome que sera pesquisado
+    //Saida: VOID
     public void excluiEventoNome(String nome) {
         int i;
         for(i=0; i<eventos.size(); i++) {
@@ -39,6 +42,9 @@ public class GestorEventos {
         }
     }
 
+    //Faz: pega evento por evento na lista de eventos e compara o nome de cada um com a String recebida por parametro, se for igual retorna o evento
+    //Entrada: String contendo o nome que sera pesquisado
+    //Saida: o evento que combine com o nome ou null caso não exista o evento
     public Evento buscarNome(String nome){
         for(int i=0; i<eventos.size(); i++) {
             Evento e = eventos.get(i);

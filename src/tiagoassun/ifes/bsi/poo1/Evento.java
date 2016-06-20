@@ -120,6 +120,9 @@ public class Evento {
         contatos.remove(c);
     }
 
+    //Faz: pega contato por contato na lista de contatos e compara o nome de cada um com a String recebida por parametro, se for igual retorna o contato
+    //Entrada: String contendo o nome que sera pesquisado
+    //Saida: o contato que combine com o nome ou null caso não exista o contato
     public Contato buscarNome(String nome){
         for(int i=0; i<contatos.size(); i++) {
             Contato c = contatos.get(i);
